@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#efefef",
+    "navigationBarTitleText": "给大佬上香",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#dedede",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#2edb36",
+    "backgroundColor": "#efefef",
+    "borderStyle": "#666",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/test.png",
+        "selectedIconPath": "assets/test-active.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "推荐",
+        "iconPath": "assets/recommond.png",
+        "selectedIconPath": "assets/recommond-active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "downloadFile": 30000,
+    "uploadFile": 60000
+  },
+  "debug": true
+}
