@@ -1,0 +1,27 @@
+{
+  "name": "yufu",
+  "homepage": "https://github.com/arlen43/yufu",
+  "description": "你是一条小鱼，我是你的伙夫",
+  "main": "app.js",
+  "keywords": [
+    "养生",
+    "健康",
+    "点餐"
+  ],
+  "authors": [
+    "arlen 任亚荣"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wafer-client-sdk": "^0.8.4"
+  }
+}
