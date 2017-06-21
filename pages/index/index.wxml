@@ -1,37 +1,30 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto" bindtap="goTest">向大佬致敬</view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-    <text class="user-motto">{{hello}}</text>
-  </view>
-</view>
-
 <!-- 页面头部开始 -->
+<view class="container">
 <view class="top">
-  <view class="toolbar mt20">
+  <view class="toolbar">
     <view class="top-left">
-      <view class="scan"></view>
-      <view class="location">芦席营</view>
+      <view class="scan">
+        <text class="f64 iconfont icon-scan"></text>
+      </view>
+      <view class="location">
+        <text class="f64 iconfont icon-coordinates"></text>
+        <text class="f24">芦席营</text>
+      </view>
     </view>
     <view class="top-right">
       <view class="search"></view>
     </view>
   </view>
   <view class="recommend">
-    <view class="recommend-label fsl">今日推荐</view>
+    <view class="recommend-label f24">今日推荐</view>
     <view class="recommend-main">
       <view class="top-left">
         <view class="recommend-food f110">饺子</view>
-        <view class="recommend-tip f18">点击查看菜谱和商家推荐</view>
+        <view class="recommend-tip f20">点击查看菜谱和商家推荐</view>
       </view>
       <view class="top-right">
-        <view class="recommend-today">今天是2017年12月22日，冬至</view>
-        <view class="recommend-cause">民间有说，冬至吃饺子，冬天不冻耳。</view>
+        <view class="recommend-today f24">今天是2017年12月22日，冬至</view>
+        <view class="recommend-cause f24">民间有说，冬至吃饺子，冬天不冻耳。</view>
       </view>
     </view>
   </view>
@@ -79,4 +72,18 @@
   <!-- 楼层结束 -->
 </view>
 <!-- 主页面结束 -->
+</view>
+
+<!--index.wxml-->
+<!--<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto" bindtap="goTest">向大佬致敬</view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">{{hello}}</text>
+  </view>
+</view>-->
 

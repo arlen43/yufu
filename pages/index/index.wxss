@@ -23,12 +23,18 @@
 .top {
   width: 750rpx;
   height: 342rpx;
+  overflow: hidden;
   background-image: url(https://arlen43.github.io/weassets/images/top.jpg);
   background-size: 750rpx 342rpx;
   color: white;
+  padding: 0 20rpx;
+  box-sizing: border-box;
 }
 
 .toolbar {
+  height: 90rpx;
+  padding: 20rpx 0;
+
   /*第一次用flex，真是神器啊，跪服！*/
   display: flex;
   /*项目排列的轴向*/
@@ -45,6 +51,8 @@
 }
 
 .top-left {
+  height: 100%;
+
   /*项目排列顺序，值越小越靠前，默认0*/
   order: 0;
   /*按比例放大项目，0表示不放大，其余值越大，占据比例越大*/
@@ -57,24 +65,39 @@
   /*定制项目的对齐方式，覆盖容器中align-items所指定的*/
   align-self: flex-start;
 
-  height: 90rpx;
   width: 290rpx;
-  background: orange;
+  /*background: orange;*/
+  border-right: 2rpx solid #ffffff;
 }
 
 .top-right {
   flex: 1 1 auto;
-  background: lightgreen;
+  /*background: lightgreen;*/
+  padding-left: 20rpx;
+}
+
+.scan {
+  display: inline-block;
+}
+.location {
+  display: inline-block;
+}
+
+.recommend {
+  height: 252px;
+  overflow: hidden;
 }
 
 .recommend-label {
   width: 100%;
-  margin-top: 36rpx;
+  margin-top: 20rpx;
 }
 
 .recommend-main {
   display: flex;
   align-items: flex-end;
+  /*height: 252rpx;*/
+  padding-bottom: 20px;
 }
 
 .recommend-food {

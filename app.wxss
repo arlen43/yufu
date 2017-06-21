@@ -1,13 +1,14 @@
 /**app.wxss**/
 .container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+  justify-content: space-between;*/
+  /*padding: 0 20rpx;*/
 } 
+
+view, scroll-view, swiper, movable-view {  box-sizing: border-box; }
 
 .mt10 { margin-top: 10rpx; }
 .mr10 { margin-right: 10rpx; }
@@ -19,8 +20,12 @@
 .ml20 { margin-left: 20rpx; }
 
 page { font-family: "Microsoft Yahei" }
-fsl { font-size: 110px; }
-f36 { font-size: 36rpx; }
-f30 { font-size: 30rpx; }
-flarge { font-size: 24rpx; }
-f18 { font-size: 18rpx; }
+.f110 { font-size: 110rpx !important; }
+.f64 { font-size: 64rpx  !important; }
+.f36 { font-size: 36rpx  !important; }
+.f30 { font-size: 30rpx  !important; }
+.f24 { font-size: 24rpx  !important; }
+.f20 { font-size: 20rpx  !important; }
+
+/* 导入字体图标 */
+@import "/assets/style/iconfont.wxss";
