@@ -13,7 +13,7 @@
 
 <!-- 页面头部开始 -->
 <view class="top">
-  <view class="toolbar">
+  <view class="toolbar mt20">
     <view class="top-left">
       <view class="scan"></view>
       <view class="location">芦席营</view>
@@ -23,11 +23,11 @@
     </view>
   </view>
   <view class="recommend">
-    <view class="recommend-label">今日推荐</view>
+    <view class="recommend-label fsl">今日推荐</view>
     <view class="recommend-main">
       <view class="top-left">
-        <view class="recommend-food">饺子</view>
-        <view class="recommend-tip">点击查看菜谱和商家推荐</view>
+        <view class="recommend-food f110">饺子</view>
+        <view class="recommend-tip f18">点击查看菜谱和商家推荐</view>
       </view>
       <view class="top-right">
         <view class="recommend-today">今天是2017年12月22日，冬至</view>

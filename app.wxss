@@ -8,3 +8,19 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.mt10 { margin-top: 10rpx; }
+.mr10 { margin-right: 10rpx; }
+.mb10 { margin-bottom: 10rpx; }
+.ml10 { margin-left: 10rpx; }
+.mt20 { margin-top: 20rpx; }
+.mr20 { margin-right: 20rpx; }
+.mb20 { margin-bottom: 20rpx; }
+.ml20 { margin-left: 20rpx; }
+
+page { font-family: "Microsoft Yahei" }
+fsl { font-size: 110px; }
+f36 { font-size: 36rpx; }
+f30 { font-size: 30rpx; }
+flarge { font-size: 24rpx; }
+f18 { font-size: 18rpx; }

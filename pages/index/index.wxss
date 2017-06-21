@@ -23,7 +23,12 @@
 .top {
   width: 750rpx;
   height: 342rpx;
-  background-image: url(/assets/images/top.jpg);
+  background-image: url(https://arlen43.github.io/weassets/images/top.jpg);
+  background-size: 750rpx 342rpx;
+  color: white;
+}
+
+.toolbar {
   /*第一次用flex，真是神器啊，跪服！*/
   display: flex;
   /*项目排列的轴向*/
@@ -34,8 +39,8 @@
   /*项目的水平对齐方式*/
   justify-content: flex-start;
   /*项目的垂直对齐方式*/
-  align-items: flex-start;
-  /*多跟轴线（多行）的垂直对齐方式*/
+  align-items: center;
+  /*多根轴线（即超出一行形成多行）的垂直对齐方式*/
   align-content: space-between;
 }
 
@@ -54,9 +59,24 @@
 
   height: 90rpx;
   width: 290rpx;
+  background: orange;
 }
 
 .top-right {
   flex: 1 1 auto;
+  background: lightgreen;
+}
+
+.recommend-label {
+  width: 100%;
+  margin-top: 36rpx;
+}
+
+.recommend-main {
+  display: flex;
+  align-items: flex-end;
+}
+
+.recommend-food {
 
 }
