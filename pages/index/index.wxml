@@ -10,3 +10,73 @@
     <text class="user-motto">{{hello}}</text>
   </view>
 </view>
+
+<!-- 页面头部开始 -->
+<view class="top">
+  <view class="toolbar">
+    <view class="top-left">
+      <view class="scan"></view>
+      <view class="location">芦席营</view>
+    </view>
+    <view class="top-right">
+      <view class="search"></view>
+    </view>
+  </view>
+  <view class="recommend">
+    <view class="recommend-label">今日推荐</view>
+    <view class="recommend-main">
+      <view class="top-left">
+        <view class="recommend-food">饺子</view>
+        <view class="recommend-tip">点击查看菜谱和商家推荐</view>
+      </view>
+      <view class="top-right">
+        <view class="recommend-today">今天是2017年12月22日，冬至</view>
+        <view class="recommend-cause">民间有说，冬至吃饺子，冬天不冻耳。</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 主页面开始 -->
+<view class="main">
+  <!-- 楼层开始 -->
+  <view class="fence">
+    <!-- 楼层头部开始 -->
+    <view class="fence-top">
+      <view class="fence-title">今日推荐</view>
+      <view class="fence-more">更多></view>
+    </view>
+    <!-- 楼层头部结束 -->
+    <!-- 楼层主内容开始 -->
+    <view class="fence-main">
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title">白菜猪肉馅饺子</view>
+          <view class="item-desc">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image class="author-image" src="/assets/images/chef.jpg"></image>
+            <view class="ahthor-name"></view>
+          </view>
+          <view class="item-exta">
+            <image class="extra-appraise" src="/assets/images/appraise.png"></image>
+            <view class="extra-desc">已有23047人评价</view>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+      </view>
+      <!-- 楼层内元素结束 -->
+    </view>
+    <!-- 楼层主内容结束 -->
+  </view>
+  <!-- 楼层结束 -->
+</view>
+<!-- 主页面结束 -->
+

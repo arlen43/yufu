@@ -19,3 +19,44 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.top {
+  width: 750rpx;
+  height: 342rpx;
+  background-image: url(/assets/images/top.jpg);
+  /*第一次用flex，真是神器啊，跪服！*/
+  display: flex;
+  /*项目排列的轴向*/
+  flex-direction: row;
+  /*项目超出一行后如何放置*/
+  flex-wrap: nowrap;
+  /*flex-flow: row nowrap; 上边两个的缩写，默认为row nowrap*/
+  /*项目的水平对齐方式*/
+  justify-content: flex-start;
+  /*项目的垂直对齐方式*/
+  align-items: flex-start;
+  /*多跟轴线（多行）的垂直对齐方式*/
+  align-content: space-between;
+}
+
+.top-left {
+  /*项目排列顺序，值越小越靠前，默认0*/
+  order: 0;
+  /*按比例放大项目，0表示不放大，其余值越大，占据比例越大*/
+  flex-grow: 0;
+  /*按比例缩小项目，0表示不缩小，其余值越大，占据比例越大*/
+  flex-shrink: inherit;
+  /*项目固定占比，如果不想项目放大缩小，设置该值，可与项目宽度设置一致，默认auto，即项目本来大小*/
+  flex-basis: 290rpx;
+  /*flex: 0 1 auto; 上边三个的缩写，推荐用该属性。默认值为0 1 auto*/
+  /*定制项目的对齐方式，覆盖容器中align-items所指定的*/
+  align-self: flex-start;
+
+  height: 90rpx;
+  width: 290rpx;
+}
+
+.top-right {
+  flex: 1 1 auto;
+
+}
