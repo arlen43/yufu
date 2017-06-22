@@ -12,7 +12,7 @@
     "navigationBarTitleText": "鱼小宝",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "backgroundColor": "#f0eff3",
+    "backgroundColor": "#36910b",
     "enablePullDownRefresh": true
   },
   "tabBar": {

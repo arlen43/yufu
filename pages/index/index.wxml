@@ -12,7 +12,7 @@
       </view>
     </view>
     <view class="toolbar-right">
-      <view class="search pr5"><text class="iconfont icon-search"></text></view>
+      <view class="search pr5"><text class="f36 iconfont icon-search"></text></view>
     </view>
   </view>
   <view class="recommend">
@@ -64,15 +64,274 @@
         </view>
         <!-- 元素详情结束 -->
         <view class="item-operate">
-          <view class="button-green f24">去点菜</view>
-          <view class="button-purple f24 mt20">自己做</view>
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
         </view>
       </view>
       <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">已有23047人评价</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">已有23047人评价</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
     </view>
     <!-- 楼层主内容结束 -->
   </view>
   <!-- 楼层结束 -->
+
+  <!-- 楼层开始 -->
+  <view class="fence color-gray3">
+    <!-- 楼层头部开始 -->
+    <view class="fence-top">
+      <view class="pl20 fence-title f30">朋友们都在吃</view>
+      <view class="fence-more f24 color-gray6">更多></view>
+    </view>
+    <!-- 楼层头部结束 -->
+    <!-- 楼层主内容开始 -->
+    <view class="fence-main">
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food2.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">蒜泥白肉</view>
+          <view class="item-desc f24 color-gray6">源自四川的蒜泥白肉，肉质鲜嫩</view>
+          <view class="item-author">
+            <image src="/assets/images/food2.jpg"></image>
+            <text class="pl5 f24 color-gray6">川百味</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">三位朋友已吃</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-orange f24 mt20">去咨询</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food2.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">蒜泥白肉</view>
+          <view class="item-desc f24 color-gray6">源自四川的蒜泥白肉，肉质鲜嫩</view>
+          <view class="item-author">
+            <image src="/assets/images/food2.jpg"></image>
+            <text class="pl5 f24 color-gray6">川百味</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">三位朋友已吃</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-orange f24 mt20">去咨询</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food2.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">蒜泥白肉</view>
+          <view class="item-desc f24 color-gray6">源自四川的蒜泥白肉，肉质鲜嫩</view>
+          <view class="item-author">
+            <image src="/assets/images/food2.jpg"></image>
+            <text class="pl5 f24 color-gray6">川百味</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">三位朋友已吃</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-orange f24 mt20">去咨询</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+    </view>
+    <!-- 楼层主内容结束 -->
+  </view>
+  <!-- 楼层结束 -->
+
+  <!-- 楼层开始 -->
+  <view class="fence color-gray3">
+    <!-- 楼层头部开始 -->
+    <view class="fence-top">
+      <view class="pl20 fence-title f30">附近的人在吃</view>
+      <view class="fence-more f24 color-gray6">更多></view>
+    </view>
+    <!-- 楼层头部结束 -->
+    <!-- 楼层主内容开始 -->
+    <view class="fence-main">
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">23人吃过</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">23人吃过</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <!-- 元素图片开始 -->
+        <view class="item-present">
+          <image class="item-image" src="/assets/images/food.jpg"></image>
+        </view>
+        <!-- 元素图片结束 -->
+        <!-- 元素详情开始 -->
+        <view class="item-detail">
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-author">
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
+          </view>
+          <view class="item-exta">
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">23人吃过</text>
+          </view>
+        </view>
+        <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button bt-green f24">去点菜</view>
+          <view class="button bt-purple f24 mt20">自己做</view>
+        </view>
+      </view>
+      <!-- 楼层内元素结束 -->
+
+    </view>
+    <!-- 楼层主内容结束 -->
+  </view>
+  <!-- 楼层结束 -->
+
 </view>
 <!-- 主页面结束 -->
 
