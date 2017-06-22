@@ -12,7 +12,7 @@
     "navigationBarTitleText": "鱼小宝",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light",
-    "backgroundColor": "#8a8a8a",
+    "backgroundColor": "#f0eff3",
     "enablePullDownRefresh": true
   },
   "tabBar": {
@@ -38,7 +38,7 @@
         "pagePath": "pages/shop/shop",
         "text": "商家",
         "iconPath": "assets/images/shop.png",
-        "selectedIconPath": "assets/images/shop-1.png"
+        "selectedIconPath": "assets/images/shop-2.png"
       },
       {
         "pagePath": "pages/mine/mine",

@@ -2,43 +2,42 @@
 <view class="container">
 <view class="top">
   <view class="toolbar">
-    <view class="top-left">
+    <view class="top-left toolbar-left">
       <view class="scan">
-        <text class="f64 iconfont icon-scan"></text>
+        <text class="f60 iconfont icon-scan"></text>
       </view>
       <view class="location">
-        <text class="f64 iconfont icon-coordinates"></text>
+        <text class="f60 iconfont icon-coordinates"></text>
         <text class="f24">芦席营</text>
       </view>
     </view>
-    <view class="top-right">
-      <view class="search"></view>
+    <view class="toolbar-right">
+      <view class="search pr5"><text class="iconfont icon-search"></text></view>
     </view>
   </view>
   <view class="recommend">
     <view class="recommend-label f24">今日推荐</view>
     <view class="recommend-main">
-      <view class="top-left">
+      <view class="top-left recommend-left">
         <view class="recommend-food f110">饺子</view>
         <view class="recommend-tip f20">点击查看菜谱和商家推荐</view>
       </view>
-      <view class="top-right">
-        <view class="recommend-today f24">今天是2017年12月22日，冬至</view>
-        <view class="recommend-cause f24">民间有说，冬至吃饺子，冬天不冻耳。</view>
+      <view class="top-right recommend-right">
+        <view id="recommend-today" class="f24">今天是2017年12月22日，冬至</view>
+        <view id="recommend-cause" class="f24">民间有说，冬至吃饺子，冬天不冻耳。</view>
       </view>
     </view>
   </view>
 </view>
 
-
 <!-- 主页面开始 -->
 <view class="main">
   <!-- 楼层开始 -->
-  <view class="fence">
+  <view class="fence color-gray3">
     <!-- 楼层头部开始 -->
     <view class="fence-top">
-      <view class="fence-title">今日推荐</view>
-      <view class="fence-more">更多></view>
+      <view class="pl20 fence-title f30">午餐推荐</view>
+      <view class="fence-more f24 color-gray6">更多></view>
     </view>
     <!-- 楼层头部结束 -->
     <!-- 楼层主内容开始 -->
@@ -52,18 +51,22 @@
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
         <view class="item-detail">
-          <view class="item-title">白菜猪肉馅饺子</view>
-          <view class="item-desc">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          <view class="item-title f34">白菜猪肉馅饺子</view>
+          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
           <view class="item-author">
-            <image class="author-image" src="/assets/images/chef.jpg"></image>
-            <view class="ahthor-name"></view>
+            <image src="/assets/images/chef.jpg"></image>
+            <text class="pl5 f24 color-gray6">北方厨房</text>
           </view>
           <view class="item-exta">
-            <image class="extra-appraise" src="/assets/images/appraise.png"></image>
-            <view class="extra-desc">已有23047人评价</view>
+            <image src="/assets/images/appraise.png"></image>
+            <text class="pl5 f24 color-gray6">已有23047人评价</text>
           </view>
         </view>
         <!-- 元素详情结束 -->
+        <view class="item-operate">
+          <view class="button-green f24">去点菜</view>
+          <view class="button-purple f24 mt20">自己做</view>
+        </view>
       </view>
       <!-- 楼层内元素结束 -->
     </view>
@@ -72,6 +75,7 @@
   <!-- 楼层结束 -->
 </view>
 <!-- 主页面结束 -->
+
 </view>
 
 <!--index.wxml-->

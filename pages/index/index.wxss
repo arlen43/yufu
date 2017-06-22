@@ -17,7 +17,13 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 200rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #f0eff3;
 }
 
 .top {
@@ -29,6 +35,18 @@
   color: white;
   padding: 0 20rpx;
   box-sizing: border-box;
+  /*新加，如果出问题则删除*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-left {
+  width: 290rpx;
+  /*background: orange;*/
+}
+.top-right {
+  /*background: lightgreen;*/
 }
 
 .toolbar {
@@ -46,13 +64,11 @@
   justify-content: flex-start;
   /*项目的垂直对齐方式*/
   align-items: center;
-  /*多根轴线（即超出一行形成多行）的垂直对齐方式*/
-  align-content: space-between;
+  /*多根轴线（即超出一行形成多行）的垂直对齐方式，一般不会用到*/
+  align-content: flex-start;
 }
 
-.top-left {
-  height: 100%;
-
+.toolbar-left {
   /*项目排列顺序，值越小越靠前，默认0*/
   order: 0;
   /*按比例放大项目，0表示不放大，其余值越大，占据比例越大*/
@@ -63,43 +79,149 @@
   flex-basis: 290rpx;
   /*flex: 0 1 auto; 上边三个的缩写，推荐用该属性。默认值为0 1 auto*/
   /*定制项目的对齐方式，覆盖容器中align-items所指定的*/
-  align-self: flex-start;
-
-  width: 290rpx;
-  /*background: orange;*/
-  border-right: 2rpx solid #ffffff;
+  align-self: center;
 }
 
-.top-right {
+.toolbar-right {
   flex: 1 1 auto;
-  /*background: lightgreen;*/
-  padding-left: 20rpx;
 }
 
 .scan {
   display: inline-block;
 }
 .location {
+  margin-right: 5rpx;
   display: inline-block;
 }
+.search {
+  border-radius: 8rpx;
+  background: #36910b;
+  text-align: right;
+  font-size: 36rpx !important;
+}
+
 
 .recommend {
-  height: 252px;
+  height: 252rpx;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20rpx 0;
 }
-
 .recommend-label {
+  flex: 1;
   width: 100%;
-  margin-top: 20rpx;
 }
-
 .recommend-main {
+  flex: 1;
   display: flex;
   align-items: flex-end;
-  /*height: 252rpx;*/
-  padding-bottom: 20px;
 }
 
+.recommend-left {
+  flex: 1 1 290rpx;
+  border-right: 2rpx solid #fff;
+}
+.recommend-right {
+  margin-left: 20rpx;
+}
 .recommend-food {
+  text-align: center;
+  font-family: FZYaoTi-M06S;
+  letter-spacing: 0rpx;
+}
+.recommend-tip {
 
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.fence {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  background: #f7f7f9;
+}
+
+.fence-top {
+  display: flex;
+  justify-content: space-between;
+  height: 70rpx;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.fence-title {
+  border-left: 10rpx solid #4db718;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+.fence-more {
+
+}
+
+.fence-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  height: 220rpx;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  border-top: 2rpx solid #a0a0a0;
+}
+.item-present {
+  flex: 0 0 165rpx;
+}
+.item-present image {
+  width: 210rpx;
+  height: 165rpx;
+}
+.item-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+.item-title {
+  flex: 0 0 60rpx;
+  height: 60rpx;
+}
+.item-desc {
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+  flex: 1;
+  width: 360rpx;
+}
+.item-author {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.item-author image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+}
+.item-exta {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.item-exta image {
+   width: 170rpx;
+   height: 35rpx;
+ }
+.item-operate {
+  flex: 0 0 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
