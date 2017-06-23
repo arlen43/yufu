@@ -1,121 +1,260 @@
-/**app.wxss**/
-
 /* 导入字体图标 */
 @import "/assets/style/iconfont.wxss";
+/*@import "//at.alicdn.com/t/font_2xmgqg3u7yuba9k9.css";*/
+@import "/assets/style/global.wxss";
 
-/* 默认样式修改 */
-view, scroll-view, swiper, movable-view {  box-sizing: border-box; letter-spacing: 0rpx; }
-page { font-family: San Francisco, Microsoft YaHei;   background: #f0eff3;}
-/*text { vertical-align:middle; }*/
+/*Tab页通用框架*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
-/* 页面边距 */
-.mt10 { margin-top: 10rpx; }
-.mr10 { margin-right: 10rpx; }
-.mb10 { margin-bottom: 10rpx; }
-.ml10 { margin-left: 10rpx; }
-.mt20 { margin-top: 20rpx; }
-.mr20 { margin-right: 20rpx; }
-.mb20 { margin-bottom: 20rpx; }
-.ml20 { margin-left: 20rpx; }
+.top {
+  width: 750 rpx;
+  overflow: hidden;
+  /*background-image: url(https://arlen43.github.io/weassets/images/top.jpg);*/
+  color: white;
+  padding: 0 20 rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-/* 内部边距 */
-.p5{padding:5rpx;}
-.pt5{padding-top:5rpx;}
-.pr5{padding-right:5rpx;}
-.pb5{padding-bottom:5rpx;}
-.pl5{padding-left:5rpx;}
-.p10{padding:10rpx;}
-.pt10{padding-top:10rpx;}
-.pr10{padding-right:10rpx;}
-.pb10{padding-bottom:10rpx;}
-.pl10{padding-left:10rpx;}
-.p20{padding:20rpx;}
-.pt20{padding-top:20rpx;}
-.pr20{padding-right:20rpx;}
-.pb20{padding-bottom:20rpx;}
-.pl20{padding-left:20rpx;}
+.top-home {
+  height: 342 rpx;
+}
 
-/* 链接样式 */
-a {cursor:pointer;color:#333;text-decoration:none;outline:none;}
-a:hover {color:#7eb343;outline:none;}
+.top-tab {
+  background: #4db718;
+}
 
-/* 字体大小 */
-.f110 { font-size: 110rpx !important; }
-.f60 { font-size: 60rpx !important; }
-.f36 { font-size: 36rpx !important; }
-.f34 { font-size: 34rpx !important; }
-.f30 { font-size: 30rpx !important; }
-.f24 { font-size: 24rpx !important; }
-.f20 { font-size: 20rpx !important; }
-.fb{font-weight:700;}
-.t2{text-indent:2em;}
+.top-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750 rpx;
+  height: 342 rpx;
+  z-index: -1;
+}
 
-/* 字体颜色 */
-.color-red {color:#ff3333;}
-.color-blue {color:#2388da;}
-.color-green{color:#72af2c;}
-.color-orange{color:#fd8e17;}
-.color-grayD{color:#DDD;}
-.color-gray9{color:#999;}
-.color-gray8{color:#8b8b8b;}
-.color-gray6{color:#666;}
-.color-gray3{color:#333;}
+.top-left {
+  width: 290 rpx;
+  /*background: orange;*/
+}
 
-.lnk-red{color:#F66;}
-.lnk-orange{color:#fd7e3d;}
-.lnk-green{color:#72af2c}
-.lnk-blue{color:#05aaee;}
-.lnk-gray{color:#777;}
-.lnk-red:hover,.lnk-green:hover,.lnk-blue:hover,.lnk-gray:hover{color:#f88b34;text-decoration:none;}
-.lnk-underline{text-decoration:underline;}
+.top-right {
+  /*background: lightgreen;*/
+}
 
+.toolbar {
+  height: 90 rpx;
+  padding: 20 rpx 0;
+  flex: 1 1 auto;
 
-/* flex 布局 */
-.flex-row { display: flex; }
-.flex-col { display: flex; flex-direction: column; }
+  /*第一次用flex，真是神器啊，跪服！*/
+  display: flex;
+  /*项目排列的轴向*/
+  flex-direction: row;
+  /*项目超出一行后如何放置*/
+  flex-wrap: nowrap;
+  /*flex-flow: row nowrap; 上边两个的缩写，默认为row nowrap*/
+  /*项目的水平对齐方式*/
+  justify-content: flex-start;
+  /*项目的垂直对齐方式*/
+  align-items: center;
+  /*多根轴线（即超出一行形成多行）的垂直对齐方式，一般不会用到*/
+  align-content: flex-start;
+}
 
+.toolbar-left {
+  /*项目排列顺序，值越小越靠前，默认0*/
+  order: 0;
+  /*按比例放大项目，0表示不放大，其余值越大，占据比例越大*/
+  flex-grow: 0;
+  /*按比例缩小项目，0表示不缩小，其余值越大，占据比例越大*/
+  flex-shrink: 0;
+  /*项目固定占比，如果不想项目放大缩小，设置该值，可与项目宽度设置一致，默认auto，即项目本来大小*/
+  flex-basis: 290 rpx;
+  /*flex: 0 1 auto; 上边三个的缩写，推荐用该属性。默认值为0 1 auto*/
+  /*定制项目的对齐方式，覆盖容器中align-items所指定的*/
+  /*align-self: center;*/
+}
 
-/* 背景色 */
-.bColor-red{ background-color:#fff0e7;}
-.bColor-blue{background-color:#0068b7;}
-.bColor-gray{background-color:#e5e5e5;}
-.bColor-hover{ background-color:#fff6eb; cursor:pointer;}
+.toolbar-right {
+  flex: 1 1 auto;
+  display: flex;
+}
 
-/*按钮
-******************************/
-button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer;-webkit-appearance:button;outline:none;}
-button[type="search"],button[type="button"]{box-sizing:border-box;}
-button{border:0 none;padding:0}
+.scan {
+  display: inline-block;
+}
 
-.button{border:0 none;border-radius:5rpx;text-align:center;padding:2rpx 5rpx;display:inline-block;color:#FFF;overflow:hidden;zoom:1;}
-.button:hover{color:#FFF;text-decoration:none; outline:none;}
+.location {
+  margin-right: 0 4 rpx;
+  display: inline-block;
+}
 
-.bt-red{background-color:#e33835;}
-.bt-red:hover{background-color:#eb6361;}
-.bt-blue{background-color:#0e9fdb;}
-.bt-blue:hover{background-color:#2bb4ed;}
-.bt-green{background:#4db718;}
-.bt-green:hover{background-color:#64d22c;}
-.bt-orange{background-color:#e78e2e;}
-.bt-orange:hover{background-color:#f6a650;}
-.bt-purple{background-color:#854ed7;}
-.bt-purple:hover{background-color:#9d6ae7;}
-.bt-gray{background-color:#e5e5e5;color:#444;}
-.bt-gray:hover{background-color:#d9d9d9;color:#444;}
-.bt-disable,.button-disable:hover{background-color:#d9d9d9;border:1px solid #d9d9d9;color:#999;}
+.search {
+  flex: 1 1 auto;
+  padding: 2 rpx 5 rpx;
+  border-radius: 8 rpx;
+  background: #36910b;
+  text-align: right;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* 状态显示 */
-.status { border: 1px solid #4db718;border-radius:5rpx;text-align:center;padding:2rpx 5rpx;display:inline-block;color:#4db718;overflow:hidden;zoom:1;}
+.recommend {
+  height: 252 rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20 rpx 0;
+}
 
-.st-red{border-color:#e33835;color:#e33835;}
-.st-red:hover{border-color:#eb6361;color:#eb6361;}
-.st-blue{border-color:#0e9fdb;color:#0e9fdb;}
-.st-blue:hover{border-color:#2bb4ed;color:#2bb4ed;}
-.st-green{border:#4db718;color:#4db718;}
-.st-green:hover{border-color:#64d22c;color:#64d22c;}
-.st-orange{border-color:#e78e2e;color:#e78e2e;}
-.st-orange:hover{border-color:#f6a650;color:#f6a650;}
-.st-purple{border-color:#854ed7;color:#854ed7;}
-.st-purple:hover{border-color:#9d6ae7;color:#9d6ae7;}
-.st-gray{border-color:#e5e5e5;color:#444;}
-.st-gray:hover{border-color:#d9d9d9;color:#444;}
+.recommend-label {
+  flex: 1;
+  width: 100%;
+  padding-left: 4 rpx;
+}
+
+.recommend-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.recommend-left {
+  flex: 0 0 290 rpx;
+  border-right: 2 rpx solid #fff;
+}
+
+.recommend-right {
+  margin-left: 20 rpx;
+  word-break: break-all;
+}
+
+.recommend-food {
+  text-align: center;
+  font-family: FZYaoTi-M06S;
+  letter-spacing: 0 rpx;
+}
+
+.recommend-tip {
+  padding-left: 4 rpx;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.fence {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20 rpx;
+  background: #f7f7f9;
+}
+
+.fence-top {
+  display: flex;
+  justify-content: space-between;
+  height: 70 rpx;
+  align-items: center;
+  padding: 0 20 rpx;
+}
+
+.fence-title {
+  border-left: 10 rpx solid #4db718;
+  line-height: 40 rpx;
+  height: 40 rpx;
+}
+
+.fence-more {
+
+}
+
+.fence-sort {
+  padding: 0 5 rpx;
+  border-right: 1px solid #aaa;
+}
+
+.fence-sort:last-child {
+  border-right: none;
+}
+
+.fence-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  height: 220 rpx;
+  padding: 10 rpx 20 rpx 10 rpx 20 rpx;
+  border-top: 1 rpx solid #a0a0a0;
+}
+
+.item-present {
+  flex: 0 0 165 rpx;
+}
+
+.item-present image {
+  width: 210 rpx;
+  height: 165 rpx;
+}
+
+.item-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20 rpx;
+}
+
+.item-title {
+  flex: 0 0 60 rpx;
+  height: 60 rpx;
+}
+
+.item-desc {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+  width: 360 rpx;
+}
+
+.item-author {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-author image {
+  width: 40 rpx;
+  height: 40 rpx;
+  border-radius: 40 rpx;
+}
+
+.item-exta {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-exta image {
+  width: 170 rpx;
+  height: 35 rpx;
+}
+
+.item-operate {
+  flex: 0 0 100 rpx;
+  display: flex;
+  flex-direction: column;
+}

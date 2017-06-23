@@ -1,6 +1,7 @@
 <!-- 页面头部开始 -->
 <view class="container">
-<view class="top">
+<view class="top top-home">
+  <image class="top-back" src="/assets/images/top.jpg"></image>
   <view class="toolbar">
     <view class="top-left toolbar-left">
       <view class="scan">
@@ -12,7 +13,10 @@
       </view>
     </view>
     <view class="toolbar-right">
-      <view class="search pr5"><text class="f36 iconfont icon-search"></text></view>
+      <view class="search">
+        <text class="f36 iconfont icon-search"></text>
+        <text class="f24">芹菜肉大馄饨</text>
+      </view>
     </view>
   </view>
   <view class="recommend">

@@ -16,6 +16,7 @@ Page({
   goTest: function() {
     wx.switchTab({
       url: '../test/test',
+
     })
   },
   onLoad: function () {
