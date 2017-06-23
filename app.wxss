@@ -10,11 +10,11 @@
 }
 
 .top {
-  width: 750 rpx;
+  width: 750rpx;
   overflow: hidden;
   /*background-image: url(https://arlen43.github.io/weassets/images/top.jpg);*/
   color: white;
-  padding: 0 20 rpx;
+  padding: 0 20rpx;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 .top-home {
-  height: 342 rpx;
+  height: 342rpx;
 }
 
 .top-tab {
@@ -33,13 +33,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 750 rpx;
-  height: 342 rpx;
+  width: 750rpx;
+  height: 342rpx;
   z-index: -1;
 }
 
 .top-left {
-  width: 290 rpx;
+  width: 290rpx;
   /*background: orange;*/
 }
 
@@ -48,8 +48,8 @@
 }
 
 .toolbar {
-  height: 90 rpx;
-  padding: 20 rpx 0;
+  height: 90rpx;
+  padding: 20rpx 0;
   flex: 1 1 auto;
 
   /*第一次用flex，真是神器啊，跪服！*/
@@ -75,7 +75,7 @@
   /*按比例缩小项目，0表示不缩小，其余值越大，占据比例越大*/
   flex-shrink: 0;
   /*项目固定占比，如果不想项目放大缩小，设置该值，可与项目宽度设置一致，默认auto，即项目本来大小*/
-  flex-basis: 290 rpx;
+  flex-basis: 290rpx;
   /*flex: 0 1 auto; 上边三个的缩写，推荐用该属性。默认值为0 1 auto*/
   /*定制项目的对齐方式，覆盖容器中align-items所指定的*/
   /*align-self: center;*/
@@ -84,6 +84,7 @@
 .toolbar-right {
   flex: 1 1 auto;
   display: flex;
+  height: 100%;
 }
 
 .scan {
@@ -91,14 +92,14 @@
 }
 
 .location {
-  margin-right: 0 4 rpx;
+  margin: 0 4rpx 0 10rpx;
   display: inline-block;
 }
 
 .search {
   flex: 1 1 auto;
-  padding: 2 rpx 5 rpx;
-  border-radius: 8 rpx;
+  padding: 2rpx 10rpx;
+  border-radius: 8rpx;
   background: #36910b;
   text-align: right;
   height: 100%;
@@ -109,18 +110,18 @@
 }
 
 .recommend {
-  height: 252 rpx;
+  height: 252rpx;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 20 rpx 0;
+  padding: 20rpx 0;
 }
 
 .recommend-label {
   flex: 1;
   width: 100%;
-  padding-left: 4 rpx;
+  padding-left: 4rpx;
 }
 
 .recommend-main {
@@ -130,23 +131,23 @@
 }
 
 .recommend-left {
-  flex: 0 0 290 rpx;
-  border-right: 2 rpx solid #fff;
+  flex: 0 0 290rpx;
+  border-right: 2rpx solid #fff;
 }
 
 .recommend-right {
-  margin-left: 20 rpx;
+  margin-left: 20rpx;
   word-break: break-all;
 }
 
 .recommend-food {
   text-align: center;
   font-family: FZYaoTi-M06S;
-  letter-spacing: 0 rpx;
+  letter-spacing: 0rpx;
 }
 
 .recommend-tip {
-  padding-left: 4 rpx;
+  padding-left: 4rpx;
 }
 
 .main {
@@ -157,22 +158,22 @@
 .fence {
   display: flex;
   flex-direction: column;
-  margin-top: 20 rpx;
+  margin-top: 20rpx;
   background: #f7f7f9;
 }
 
 .fence-top {
   display: flex;
   justify-content: space-between;
-  height: 70 rpx;
+  height: 70rpx;
   align-items: center;
-  padding: 0 20 rpx;
+  padding: 0 20rpx;
 }
 
 .fence-title {
-  border-left: 10 rpx solid #4db718;
-  line-height: 40 rpx;
-  height: 40 rpx;
+  border-left: 10rpx solid #4db718;
+  line-height: 40rpx;
+  height: 40rpx;
 }
 
 .fence-more {
@@ -180,7 +181,7 @@
 }
 
 .fence-sort {
-  padding: 0 5 rpx;
+  padding: 0 12rpx;
   border-right: 1px solid #aaa;
 }
 
@@ -195,18 +196,18 @@
 
 .item {
   display: flex;
-  height: 220 rpx;
-  padding: 10 rpx 20 rpx 10 rpx 20 rpx;
-  border-top: 1 rpx solid #a0a0a0;
+  height: 220rpx;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  border-top: 1rpx solid #a0a0a0;
 }
 
 .item-present {
-  flex: 0 0 165 rpx;
+  flex: 0 0 165rpx;
 }
 
 .item-present image {
-  width: 210 rpx;
-  height: 165 rpx;
+  width: 210rpx;
+  height: 165rpx;
 }
 
 .item-detail {
@@ -214,12 +215,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 20 rpx;
+  margin-left: 20rpx;
 }
 
 .item-title {
-  flex: 0 0 60 rpx;
-  height: 60 rpx;
+  flex: 0 0 60rpx;
+  height: 60rpx;
 }
 
 .item-desc {
@@ -227,7 +228,7 @@
   overflow: hidden;
   white-space: nowrap;
   flex: 1;
-  width: 360 rpx;
+  width: 360rpx;
 }
 
 .item-author {
@@ -237,9 +238,9 @@
 }
 
 .item-author image {
-  width: 40 rpx;
-  height: 40 rpx;
-  border-radius: 40 rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
 }
 
 .item-exta {
@@ -249,12 +250,12 @@
 }
 
 .item-exta image {
-  width: 170 rpx;
-  height: 35 rpx;
+  width: 170rpx;
+  height: 35rpx;
 }
 
 .item-operate {
-  flex: 0 0 100 rpx;
+  flex: 0 0 100rpx;
   display: flex;
   flex-direction: column;
 }

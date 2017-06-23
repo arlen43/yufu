@@ -27,24 +27,54 @@
       <!-- 楼层头部开始 -->
       <view class="fence-top">
         <view class="fence-sort f26">综合
-          <text class="f30 iconfont icon-arrowshengxu"></text>
+          <text class="f26 iconfont icon-arrowshengxu"></text>
         </view>
         <view class="fence-sort f26 color-gray6">距离
-          <text class="f30 iconfont icon-arrowjiangxu"></text>
+          <text class="f26 iconfont icon-arrowjiangxu"></text>
         </view>
         <view class="fence-sort f26 color-gray6">排队人数
-          <text class="f30 iconfont icon-arrowjiangxu"></text>
+          <text class="f26 iconfont icon-arrowjiangxu"></text>
         </view>
         <view class="fence-sort f26 color-gray6">喜欢
-          <text class="f30 iconfont icon-arrowjiangxu"></text>
+          <text class="f26 iconfont icon-arrowjiangxu"></text>
         </view>
         <view class="fence-sort f26 color-gray6">筛选
-          <text class="f30 iconfont icon-shaixuan"></text>
+          <text class="f26 iconfont icon-shaixuan"></text>
         </view>
       </view>
       <!-- 楼层头部结束 -->
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item">
+          <!-- 元素图片开始 -->
+          <view class="item-present">
+            <image class="item-image" src="/assets/images/food.jpg"></image>
+          </view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-detail">
+            <view class="item-title f34">黄记焖锅</view>
+            <view class="item-desc f24 color-gray6">百年老店黄记焖锅，舌尖上的中国</view>
+            <view class="item-author">
+              <image src="/assets/images/chef.jpg"></image>
+              <text class="pl5 f24 color-gray6">北方厨房</text>
+            </view>
+            <view class="item-exta">
+              <text class="f30 color-orange iconfont icon-coupons"></text>
+              <text class="pl5 f24 color-gray6">立减5元</text>
+              <text class="f30 color-orange iconfont icon-coupons"></text>
+              <text class="pl5 f24 color-gray6">满100减20</text>
+            </view>
+          </view>
+          <!-- 元素详情结束 -->
+          <view class="item-operate">
+            <view class="button bt-green f24">去点菜</view>
+            <view class="button bt-purple f24 mt20">去预约</view>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+
         <!-- 楼层内元素开始 -->
         <view class="item">
           <!-- 元素图片开始 -->

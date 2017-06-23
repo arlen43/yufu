@@ -85,7 +85,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:p
 button[type="search"],button[type="button"]{box-sizing:border-box;}
 button{border:0 none;padding:0}
 
-.button{border:0 none;border-radius:5rpx;text-align:center;padding:2rpx 5rpx;display:inline-block;color:#FFF;overflow:hidden;zoom:1;}
+.button{border:0 none;border-radius:8rpx;text-align:center;padding:2rpx 4rpx;display:inline-block;color:#FFF;overflow:hidden;zoom:1;}
 .button:hover{color:#FFF;text-decoration:none; outline:none;}
 
 .bt-red{background-color:#e33835;}
