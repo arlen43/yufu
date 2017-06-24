@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="search-top">
+    <view class="search color-white" catchtap="goSearchCategory">
+      <text class="f36 iconfont icon-search"></text>
+      <input class="f24" placeholder="搜索菜谱或店铺" focus="true" value="" />
+    </view>
+  </view>
+  <view class="search-main">
+    <view class="search-tip f24">搜索指定内容</view>
+    <view class="search-category">
+      <text class="f30 color-green">菜谱</text>
+      <text class="f30 color-green">店铺</text>
+    </view>
+  </view>
+</view>

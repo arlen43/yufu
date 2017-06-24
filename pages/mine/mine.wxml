@@ -1,2 +1,186 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!-- 页面头部开始 -->
+<view class="container">
+  <view class="top mine-top">
+    <view class="mine-main">
+      <view class="mine-img">
+        <image src="/assets/images/chef.jpg"></image>
+      </view>
+      <view class="mine-info">
+        <view class="f36">天下第一厨神</view>
+        <view class="mt10 f24">arlen43@163.com</view>
+      </view>
+    </view>
+    <view class="mine-set">
+      <text class="f50 iconfont icon-setup"></text>
+      <text class="ml10 f50 iconfont icon-message"></text>
+    </view>
+  </view>
+
+  <!-- 主页面开始 -->
+  <view class="main">
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">今日运动数据</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-chart">
+          <text class="f24">暂无数据，请允许小宝访问您的健康数据</text>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">历史能量摄入数据</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-chart">
+          <text class="f24">暂无数据，人家才认识你，过几天就有数据啦</text>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">我的动态</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-mine">
+          <view class="item-block item-head">
+            <text class="f60 iconfont icon-noorder color-green"></text>
+            <text class="f30">订单</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">1</text>
+            <text class="f24">未提交</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">2</text>
+            <text class="f24">未付款</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">20</text>
+            <text class="f24">未评价</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素开始 -->
+        <view class="item item-mine">
+          <view class="item-block item-head">
+            <text class="f60 iconfont icon-dingdan- color-orange"></text>
+            <text class="f30">菜谱</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">3</text>
+            <text class="f24">喜欢的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">0</text>
+            <text class="f24">收藏的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">1</text>
+            <text class="f24">发布的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">234</text>
+            <text class="f24">浏览的</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素开始 -->
+        <view class="item item-mine">
+          <view class="item-block item-head">
+            <text class="f60 iconfont icon-dianpu- color-purple"></text>
+            <text class="f30">店铺</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">2</text>
+            <text class="f24">喜欢的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">0</text>
+            <text class="f24">收藏的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">33</text>
+            <text class="f24">吃过的</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素开始 -->
+        <view class="item item-mine">
+          <view class="item-block item-head">
+            <text class="f60 iconfont icon-pingjia color-blue"></text>
+            <text class="f30">评价</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">3</text>
+            <text class="f24">我评价的</text>
+          </view>
+          <view class="item-block">
+            <text class="f34">23</text>
+            <text class="f24">回复我的</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">设置</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-set">
+          <view class="item-row">
+            <text class="f30">账号</text>
+            <text class="iconfont icon-enter"></text>
+          </view>
+          <view class="item-row">
+            <text class="f30">通用</text>
+            <text class="iconfont icon-enter"></text>
+          </view>
+          <view class="item-row">
+            <text class="f30">关于鱼小宝</text>
+            <text class="iconfont icon-enter"></text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+  </view>
+  <!-- 主页面结束 -->
+  <view class="f24 color-grayD bottom-tip">~鱼小宝已经长不高啦~</view>
+</view>

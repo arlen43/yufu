@@ -8,6 +8,9 @@ Page({
     hello: '王志君大佬好'
   },
   //事件处理函数
+  goSearchCategory: function() {
+    wx.navigateTo({url: "../search/search"});
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

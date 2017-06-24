@@ -3,6 +3,12 @@
 /*@import "//at.alicdn.com/t/font_2xmgqg3u7yuba9k9.css";*/
 @import "/assets/style/global.wxss";
 
+/* 默认样式修改 */
+view, scroll-view, swiper, movable-view {  box-sizing: border-box; letter-spacing: 0rpx; }
+page, button, input, label, picker, picker-view, switch, textarea { font-family: San Francisco, Microsoft YaHei !important;}
+page {background: #f0eff3;}
+/*text { vertical-align:middle; }*/
+
 /*Tab页通用框架*/
 .container {
   display: flex;
@@ -101,11 +107,10 @@
   padding: 2rpx 10rpx;
   border-radius: 8rpx;
   background: #36910b;
-  text-align: right;
   height: 100%;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  /*flex-direction: row-reverse;
+  justify-content: space-between;*/
   align-items: center;
 }
 
@@ -207,7 +212,7 @@
 
 .item-present image {
   width: 210rpx;
-  height: 165rpx;
+  height: 160rpx;
 }
 
 .item-detail {
@@ -258,4 +263,10 @@
   flex: 0 0 100rpx;
   display: flex;
   flex-direction: column;
+}
+
+.bottom-tip {
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
 }

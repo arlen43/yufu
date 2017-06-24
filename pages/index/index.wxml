@@ -13,7 +13,7 @@
       </view>
     </view>
     <view class="toolbar-right">
-      <view class="search">
+      <view class="search" catchtap="goSearchCategory">
         <text class="f36 iconfont icon-search"></text>
         <text class="f24">芹菜肉大馄饨</text>
       </view>
@@ -338,7 +338,7 @@
 
 </view>
 <!-- 主页面结束 -->
-
+<view class="f24 color-grayD bottom-tip">~鱼小宝已经长不高啦~</view>
 </view>
 
 <!--index.wxml-->

@@ -4,6 +4,7 @@
     "pages/menu/menu",
     "pages/shop/shop",
     "pages/mine/mine",
+    "pages/search/search",
     "pages/logs/logs",
     "pages/test/test"
   ],
@@ -30,7 +31,7 @@
       },
       {
         "pagePath": "pages/menu/menu",
-        "text": "谱子",
+        "text": "菜谱",
         "iconPath": "assets/images/menu.png",
         "selectedIconPath": "assets/images/menu-1.png"
       },
