@@ -1,15 +1,26 @@
-<view class="container">
+<view class="container color-white">
   <view class="search-top">
-    <view class="search color-white" catchtap="goSearchCategory">
+    <view class="search" catchtap="goSearchCategory">
       <text class="f36 iconfont icon-search"></text>
-      <input class="f24" placeholder="搜索菜谱或店铺" focus="true" value="" />
+      <input class="f30" placeholder-class="f30 color-lgreen" 
+            placeholder="搜索菜谱或店铺" focus="true" value=""
+            maxlength="20" confirm-type="search" bindconfirm="goSearch" />
+      <text class="f36 iconfont icon-delete_fill"></text>
     </view>
+    <view class="f30 ml20">取消</view>
   </view>
   <view class="search-main">
-    <view class="search-tip f24">搜索指定内容</view>
+    <view class="search-tip f30">搜索指定内容</view>
     <view class="search-category">
-      <text class="f30 color-green">菜谱</text>
-      <text class="f30 color-green">店铺</text>
+      <text class="f34 color-green">菜谱</text>
+      <text class="f34 color-green">店铺</text>
+    </view>
+    <view class="search-keylist">
+      <view class="search-key f30 color-gray6">实时搜索文本</view>
+      <view class="search-key f30 color-gray6">实时搜索文本</view>
+      <view class="search-key f30 color-gray6">实时搜索文本</view>
+      <view class="search-key f30 color-gray6">实时搜索文本</view>
+      <view class="search-key f30 color-gray6">实时搜索文本</view>
     </view>
   </view>
 </view>
