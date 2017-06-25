@@ -1,0 +1,219 @@
+<view class="container">
+  <view class="cook-top">
+    <image class="main-img" src="/assets/images/food2.jpg"></image>
+    <view class="cook-title">
+      <text class="f50 cook-name">蒜泥白肉</text>
+      <view class="mt 20">
+        <text class="f24 color-gray6">浏览：10234</text>
+        <text class="pl20 f24 color-gray6">收藏：234</text>
+      </view>
+    </view>
+    <view class="author-block p20">
+      <view class="author-main">
+        <image class="author-img" src="/assets/images/chef.jpg"></image>
+        <view class="ml20">
+          <view class="f36">天下第一厨神</view>
+          <view class="mt10 f24">2017-06-25</view>
+        </view>
+      </view>
+      <view class="author-set">
+        <text class="status st-red f30">关注</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 主页面开始 -->
+  <view class="main">
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">简介</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-cookbook">
+          <view class="item-icon-tip">
+            <view class="item-icon-tip-name">
+              <text class="f60 iconfont icon-pingjia color-blue"></text>
+              <text class="f24 color-gray8">功效</text>
+            </view>
+            <view class="item-icon-tip-desc">
+              <text class="f24 color-gray4">养胃</text>
+              <text class="f24 color-gray4">养胃</text>
+            </view>
+          </view>
+          <view class="div"></view>
+          <view class="item-icon-tip">
+            <view class="item-icon-tip-name">
+              <text class="f60 iconfont icon-pingjia color-blue"></text>
+              <text class="f24 color-gray8">时长</text>
+            </view>
+            <view class="item-icon-tip-desc">
+              <text class="f24 color-gray4">30分钟</text>
+            </view>
+          </view>
+          <view class="item-icon-tip">
+            <view class="item-icon-tip-name">
+              <text class="f60 iconfont icon-pingjia color-blue"></text>
+              <text class="f24 color-gray8">难易度</text>
+            </view>
+            <view class="item-icon-tip-desc">
+              <text class="f24 color-gray4">复杂</text>
+            </view>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素开始 -->
+        <view class="item item-cookbook">
+          <!-- 元素图片开始 -->
+          <text class="paragraph">这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。。。。。</text>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">主材</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-set f30">
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">辅材</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-set f30">
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+          <view class="item-row">
+            <text class="item-col">猪瘦肉</text>
+            <text class="item-col">500g</text>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">步骤</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-step">
+          <!-- 元素图片开始 -->
+          <view class="item-step-num">1.</view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-step-detail">
+            <image class="item-big-img" src="/assets/images/food.jpg"></image>
+            <view class="item-desc f30 color-gray4">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素开始 -->
+        <view class="item item-step">
+          <!-- 元素图片开始 -->
+          <view class="item-step-num">2.</view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-step-detail">
+            <image class="item-big-img" src="/assets/images/food.jpg"></image>
+            <view class="item-desc f30 color-gray4">猪瘦肉泡水洗干净，放入碗中，加少量盐、料酒、生粉，拌匀腌制30分钟。</view>
+          </view>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+    <!-- 楼层开始 -->
+    <view class="fence color-gray3">
+      <!-- 楼层头部开始 -->
+      <view class="fence-top">
+        <view class="pl20 fence-title f30">小贴士</view>
+      </view>
+      <!-- 楼层头部结束 -->
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item item-cookbook">
+          <!-- 元素图片开始 -->
+          <text class="paragraph">这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。。。。。</text>
+        </view>
+        <!-- 楼层内元素结束 -->
+      </view>
+      <!-- 楼层主内容结束 -->
+    </view>
+    <!-- 楼层结束 -->
+
+  </view>
+  <!-- 主页面结束 -->
+
+  <view class="bottom-toolbar">
+    <view class="bottom-tool">
+      <text class="f50 iconfont icon-interactive"></text>
+      <text class="f24">24</text>
+    </view>
+    <view class="bottom-tool">
+      <text class="f50 color-green iconfont icon-like_fill"></text>
+      <text class="f24">234</text>
+    </view>
+    <view class="bottom-tool">
+      <text class="f50 iconfont icon-collection"></text>
+      <text class="f24">收藏</text>
+    </view>
+    <view class="bottom-tool">
+      <text class="f50 iconfont icon-send"></text>
+      <text class="f24">转发</text>
+    </view>
+  </view>
+</view>

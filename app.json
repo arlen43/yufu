@@ -1,8 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/menu/menu",
+    "pages/cookbook/cookbook",
+    "pages/cookbook/detail/detail",
+    "pages/cookbook/edit/edit",
     "pages/shop/shop",
+    "pages/shop/menu/menu",
+    "pages/shop/detail/detail",
     "pages/mine/mine",
     "pages/search/search",
     "pages/logs/logs",
@@ -30,7 +34,7 @@
         "selectedIconPath": "assets/images/home-1.png"
       },
       {
-        "pagePath": "pages/menu/menu",
+        "pagePath": "pages/cookbook/cookbook",
         "text": "菜谱",
         "iconPath": "assets/images/menu.png",
         "selectedIconPath": "assets/images/menu-1.png"

@@ -5,7 +5,7 @@
 
 /* 默认样式修改 */
 view, scroll-view, swiper, movable-view {  box-sizing: border-box; letter-spacing: 0rpx; }
-page, button, input, label, picker, picker-view, switch, textarea { font-family: San Francisco, Microsoft YaHei !important;}
+page, button, input, label, picker, picker-view, switch, textarea { font-family: San Francisco, Microsoft YaHei !important;color: #333; font-size: 30rpx;}
 page {background: #f0eff3;}
 /*text { vertical-align:middle; }*/
 
@@ -265,8 +265,158 @@ page {background: #f0eff3;}
   flex-direction: column;
 }
 
+/** mine 等特殊地方 **/
+.item-block {
+  height: 100rpx;
+  width: 150rpx;
+  padding: 0 5rpx;
+  border-right: 1rpx solid #aaa;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-block:last-child {
+  border-right: none;
+}
+.item-head {
+  position: relative;
+  /*margin-right: 20rpx;*/
+  padding-left: 0 !important;
+  width: 130rpx !important;
+  
+}
+.item-head::after {
+  width: 20rpx;
+  height: 20rpx;
+  display: block; 
+  content:"";
+  transform: rotate(45deg);
+  background: #f7f7f9;
+  border: 1rpx solid #aaa;
+  border-left: none;
+  border-bottom: none;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -10rpx;
+  margin-left: -10rpx;
+}
+
+.item-set {
+  height: inherit !important;
+  display: flex;
+  flex-direction: column;
+}
+.item-row {
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #aaa;
+}
+.item-row:last-child {
+  border-bottom: none;
+}
+.item-col {
+  flex: 1;
+  padding: 0 10rpx;
+}
+
+/**菜谱相关**/
+
+/**菜谱中作者描述**/
+.author-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.author-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.author-img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.div {
+  display:block;
+  height:100%;
+  border-left:1rpx solid #aaa;
+  width: 1rpx;
+}
+
+/**菜谱中特性描述**/
+.item-cookbook {
+  height: inherit !important;
+  display: flex;
+  justify-content: space-around;
+}
+.item-icon-tip {
+  display: flex;
+  align-items: center;
+  border-right: 1rpx solid #aaa;
+  padding: 0 20rpx;
+  margin: 20rpx 0;
+}
+.item-icon-tip:last-child {
+  border-right: none;
+}
+.item-icon-tip-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-icon-tip-desc {
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/**菜谱步骤描述**/
+.item-step {
+  height: inherit !important;
+  display: flex;
+  justify-content: space-between;
+}
+.item-step-num {
+  padding-right: 20rpx;
+}
+.item-step-detail {
+  flex: 1;
+}
+.item-big-img {
+  width: 660rpx;
+  height: 450rpx;
+}
+
+.bottom-toolbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1rpx solid #aaa;
+  background: #f5f4f5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-tool {
+  display: flex;
+  align-items: center;
+}
+
 .bottom-tip {
   height: 60rpx;
   line-height: 60rpx;
   text-align: center;
+}
+
+.paragraph {
+  text-indent: 2rem;
+  padding: 10rpx 0;
+  line-height: 1.5rem;
 }

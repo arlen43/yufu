@@ -11,6 +11,9 @@ Page({
   goSearchCategory: function() {
     wx.navigateTo({url: "../search/search"});
   },
+  goCookDetail: function() {
+    wx.navigateTo({url: "../cookbook/detail/detail"});
+  },
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'

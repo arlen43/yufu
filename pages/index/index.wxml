@@ -69,7 +69,7 @@
         <!-- 元素详情结束 -->
         <view class="item-operate">
           <view class="button bt-green f24">去点菜</view>
-          <view class="button bt-purple f24 mt20">自己做</view>
+          <view class="button bt-purple f24 mt20" catchtap="goCookDetail">自己做</view>
         </view>
       </view>
       <!-- 楼层内元素结束 -->
