@@ -1,2 +1,80 @@
-<!--pages/shop/detail/detail.wxml-->
-<text>pages/shop/detail/detail.wxml</text>
+<view class="container">
+  <view class="top top-menu">
+    <view class="mine-main">
+      <view class="mine-img">
+        <image src="/assets/images/chef.jpg"></image>
+      </view>
+      <view class="mine-info">
+        <view class="f36">老成都</view>
+        <view class="mt10 f24">正宗的川菜，俺们四四川滴</view>
+      </view>
+    </view>
+    <view class="mine-set">
+      <text class="f50 iconfont icon-collection"></text>
+    </view>
+  </view>
+
+  <view class="main">
+    <view class="tab-bar f30">
+      <view class="tab tab-active">点菜</view>
+      <view class="tab">预约</view>
+      <view class="tab">评价</view>
+      <view class="tab">商家</view>
+    </view>
+    <view id="order" class="tab-main">
+      <scroll-view scroll-y="true" class="menu-left">
+        <view class="f26 m-tab m-tab-active">酱汁烤鸭</view>
+        <view class="f26 m-tab">酒水</view>
+        <view class="f26 m-tab">凉菜</view>
+        <view class="f26 m-tab">精品</view>
+      </scroll-view>
+      
+      <!-- 楼层主内容开始 -->
+      <view class="fence-main">
+        <!-- 楼层内元素开始 -->
+        <view class="item">
+          <!-- 元素图片开始 -->
+          <view class="item-present">
+            <image class="item-image" src="/assets/images/food.jpg"></image>
+          </view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-detail">
+            <view class="f34">四川麻辣烫</view>
+            <view class="f24 mt10">
+              <text class="status st-orange">排湿</text>
+              <text class="ml10 status st-orange">爽口</text>
+            </view>
+            <view class="color-red mt10">
+              <text class="f30 iconfont icon-lajiao"></text>
+              <text class="f30 iconfont icon-lajiao"></text>
+              <text class="f30 iconfont icon-lajiao"></text>
+            </view>
+            <view>
+              <text class="pl5 mt10 f24 color-gray6">已售23份，月售400份</text>
+            </view>
+          </view>
+          <!-- 元素详情结束 -->
+          <view class="item-order f24">
+            <text class="f50 iconfont icon-offline"></text>
+            <text class="item-order-num">1</text>
+            <text class="f50 iconfont icon-addition"></text>
+          </view>
+        </view>
+      <!-- 楼层内元素结束 -->
+      </view>
+    </view>
+  </view>
+
+  <view id="booking" class="tab-main">
+    
+  </view>
+
+  <view id="recommend" class="tab-main">
+    
+  </view>
+  <view id="shop" class="tab-main">
+    
+  </view>
+
+</view>

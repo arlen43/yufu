@@ -69,7 +69,7 @@
           </view>
           <!-- 元素详情结束 -->
           <view class="item-operate">
-            <view class="button bt-green f24">去点菜</view>
+            <view class="button bt-green f24" catchtap="goShopDetail">去点菜</view>
             <view class="button bt-purple f24 mt20">去预约</view>
           </view>
         </view>

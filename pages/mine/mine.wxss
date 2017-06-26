@@ -1,25 +1,5 @@
 /* pages/mine/mine.wxss */
-.mine-top {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: space-between;
-  background: #4db718;
-  padding: 20rpx;
-}
-.mine-main {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-.mine-img image{
-  width: 130rpx;
-  height: 130rpx;
-  border-radius: 130rpx;
-  /*margin-left: 20rpx;*/
-}
-.mine-info {
-  padding-left: 20rpx;
-}
+
 
 .item-chart {
   height: 300rpx !important;
