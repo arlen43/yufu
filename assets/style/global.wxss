@@ -46,6 +46,8 @@ a:active {color:#7eb343;outline:none;}
 .fb{font-weight:700;}
 .t2{text-indent:2em;}
 
+.fdel { text-decoration:line-through; }
+
 /* 字体颜色 */
 .color-red {color:#e33835;}
 .color-blue {color:#0e9fdb;}

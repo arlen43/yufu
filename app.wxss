@@ -109,8 +109,6 @@ page {background: #f0eff3;}
   background: #36910b;
   min-height:1.4rem;
   display: flex;
-  /*flex-direction: row-reverse;
-  justify-content: space-between;*/
   align-items: center;
 }
 
@@ -156,14 +154,7 @@ page {background: #f0eff3;}
   padding-left: 4rpx;
 }
 
-/*我的、商家头部*/
-.top-menu {
-  display: flex;
-  flex-direction: row !important;
-  justify-content: center;
-  background: #4db718;
-  padding: 20rpx;
-}
+/*我的头部、商家头部*/
 .mine-top {
   display: flex;
   flex-direction: row !important;

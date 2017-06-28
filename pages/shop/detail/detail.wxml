@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="top top-menu">
+  <view class="top mine-top">
     <view class="mine-main">
       <view class="mine-img">
         <image src="/assets/images/chef.jpg"></image>
@@ -21,9 +21,19 @@
       <view class="tab">评价</view>
       <view class="tab">商家</view>
     </view>
+    <!-- tab 开始 -->
     <view id="order" class="tab-main">
       <scroll-view scroll-y="true" class="menu-left">
         <view class="f26 m-tab m-tab-active">酱汁烤鸭</view>
+        <view class="f26 m-tab">酒水</view>
+        <view class="f26 m-tab">凉菜</view>
+        <view class="f26 m-tab">精品</view>
+        <view class="f26 m-tab">酒水</view>
+        <view class="f26 m-tab">凉菜</view>
+        <view class="f26 m-tab">精品</view>
+        <view class="f26 m-tab">酒水</view>
+        <view class="f26 m-tab">凉菜</view>
+        <view class="f26 m-tab">精品</view>
         <view class="f26 m-tab">酒水</view>
         <view class="f26 m-tab">凉菜</view>
         <view class="f26 m-tab">精品</view>
@@ -41,40 +51,54 @@
           <!-- 元素详情开始 -->
           <view class="item-detail">
             <view class="f34">四川麻辣烫</view>
-            <view class="f24 mt10">
-              <text class="status st-orange">排湿</text>
-              <text class="ml10 status st-orange">爽口</text>
-            </view>
-            <view class="color-red mt10">
+            <view class="f24 mt5 color-gray6">已售23份，月售400份</view>
+            <view class="color-red mt5">
               <text class="f30 iconfont icon-lajiao"></text>
               <text class="f30 iconfont icon-lajiao"></text>
               <text class="f30 iconfont icon-lajiao"></text>
             </view>
-            <view>
-              <text class="pl5 mt10 f24 color-gray6">已售23份，月售400份</text>
+            <view class="item-order f30">
+              <text class="item-price color-orange">￥30</text>
+              <view class="item-select color-green">
+                <text class="f60 iconfont icon-offline"></text>
+                <text class="item-order-num">1</text>
+                <text class="f60 iconfont icon-addition_fill"></text>
+              </view>
             </view>
           </view>
           <!-- 元素详情结束 -->
-          <view class="item-order f24">
-            <text class="f50 iconfont icon-offline"></text>
-            <text class="item-order-num">1</text>
-            <text class="f50 iconfont icon-addition"></text>
-          </view>
         </view>
-      <!-- 楼层内元素结束 -->
+        <!-- 楼层内元素结束 -->
       </view>
+      <!-- 楼层主内容结束 -->
     </view>
+    <!-- tab 结束 -->
+
+    <view id="booking" class="tab-main">
+
+    </view>
+
+    <view id="comment" class="tab-main">
+
+    </view>
+    <view id="shop" class="tab-main">
+
+    </view>
+
   </view>
 
-  <view id="booking" class="tab-main">
-    
-  </view>
-
-  <view id="recommend" class="tab-main">
-    
-  </view>
-  <view id="shop" class="tab-main">
-    
+  <view class="bottom-toolbar bottom-cook color-white">
+    <view class="cart-block">
+      <text class="f20 cart-num">3</text>
+      <text class="f60 iconfont icon-gouwuche"></text>
+    </view>
+    <view class="cart-cost">
+      <text class="f36">￥36</text>
+      <text class="f24">已节省￥3</text>
+    </view>
+    <view class="cart-done">
+      <text class="f36">选好了</text>
+    </view>
   </view>
 
 </view>
