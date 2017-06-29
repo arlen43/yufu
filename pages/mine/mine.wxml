@@ -1,16 +1,16 @@
 <!-- 页面头部开始 -->
 <view class="container">
-  <view class="top mine-top">
-    <view class="mine-main">
-      <view class="mine-img">
+  <view class="top mine-top owner-block">
+    <view class="owner-main">
+      <view class="owner-img">
         <image src="/assets/images/chef.jpg"></image>
       </view>
-      <view class="mine-info">
+      <view class="ml20">
         <view class="f36">天下第一厨神</view>
         <view class="mt10 f24">arlen43@163.com</view>
       </view>
     </view>
-    <view class="mine-set">
+    <view class="owner-set">
       <text class="f50 iconfont icon-setup"></text>
       <text class="ml10 f50 iconfont icon-message"></text>
     </view>
@@ -66,7 +66,7 @@
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
         <!-- 楼层内元素开始 -->
-        <view class="item item-mine">
+        <view class="item mine-item">
           <view class="item-block item-head">
             <text class="f60 iconfont icon-noorder color-green"></text>
             <text class="f30">订单</text>
@@ -86,7 +86,7 @@
         </view>
         <!-- 楼层内元素结束 -->
         <!-- 楼层内元素开始 -->
-        <view class="item item-mine">
+        <view class="item mine-item">
           <view class="item-block item-head">
             <text class="f60 iconfont icon-dingdan- color-orange"></text>
             <text class="f30">菜谱</text>
@@ -110,7 +110,7 @@
         </view>
         <!-- 楼层内元素结束 -->
         <!-- 楼层内元素开始 -->
-        <view class="item item-mine">
+        <view class="item mine-item">
           <view class="item-block item-head">
             <text class="f60 iconfont icon-dianpu- color-purple"></text>
             <text class="f30">店铺</text>
@@ -130,7 +130,7 @@
         </view>
         <!-- 楼层内元素结束 -->
         <!-- 楼层内元素开始 -->
-        <view class="item item-mine">
+        <view class="item mine-item">
           <view class="item-block item-head">
             <text class="f60 iconfont icon-pingjia color-blue"></text>
             <text class="f30">评价</text>
@@ -160,7 +160,7 @@
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
         <!-- 楼层内元素开始 -->
-        <view class="item item-set">
+        <view class="item grid-item">
           <view class="item-row">
             <text class="f30">账号</text>
             <text class="iconfont icon-enter"></text>

@@ -1,21 +1,48 @@
 /**index.wxss**/
-.userinfo {
+
+/*头部背景图*/
+.top-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 342rpx;
+  z-index: -1;
+}
+
+
+/*每日推荐*/
+.recommend {
+  height: 252rpx;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 20rpx 0;
 }
-
-.userinfo-avatar {
-  width: 128 rpx;
-  height: 128 rpx;
-  margin: 20 rpx;
-  border-radius: 50%;
+/*每日推荐四个字*/
+.recommend-label {
+  flex: 1;
+  width: 100%;
+  padding-left: 4rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.recommend-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
 }
-
-.usermotto {
-  margin-top: 200 rpx;
+.recommend-left {
+  border-right: 2rpx solid #fff;
+}
+.recommend-right {
+  margin-left: 20rpx;
+  word-break: break-all;
+}
+.recommend-food {
+  text-align: center;
+  /*font-family: FZYaoTi-M06S;*/
+  letter-spacing: 0rpx;
+}
+.recommend-tip {
+  padding-left: 4rpx;
 }

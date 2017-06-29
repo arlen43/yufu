@@ -118,3 +118,11 @@ button{outline:none;border:0 none;width:inherit !important;height:inherit !impor
 .st-purple:active{border-color:#9d6ae7;color:#9d6ae7;}
 .st-gray{border-color:#e5e5e5;color:#444;}
 .st-gray:active{border-color:#d9d9d9;color:#444;}
+
+/* 段落 */
+
+.paragraph {
+  text-indent: 2rem;
+  padding: 10rpx 0;
+  line-height: 1.5rem;
+}

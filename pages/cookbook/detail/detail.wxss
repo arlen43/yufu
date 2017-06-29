@@ -17,6 +17,10 @@
   align-content: center;
   text-align: center;
 }
+.cook-author {
+  display: flex;
+  align-items: center;
+}
 .cook-name {
   flex: 1;
 }

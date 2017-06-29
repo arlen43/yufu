@@ -53,12 +53,12 @@
   background: #f7f7f9;
 }
 
-.item:first-child {
+/*.item:first-child {
   border-top: none;
 }
 .item {
   height: inherit !important;
-}
+}*/
 
 .item-price {
   flex: 1;
@@ -115,7 +115,6 @@
   flex-direction: column;
 
 }
-
 .cart-done {
   height: 100%;
   width: 200rpx;

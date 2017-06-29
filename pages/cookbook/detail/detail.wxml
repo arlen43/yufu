@@ -8,16 +8,18 @@
         <text class="pl20 f24 color-gray6">收藏：234</text>
       </view>
     </view>
-    <view class="author-block p20">
-      <view class="author-main">
-        <image class="author-img" src="/assets/images/chef.jpg"></image>
+    <view class="owner-block cook-author p20">
+      <view class="owner-main">
+        <view class="owner-img">
+          <image src="/assets/images/chef.jpg"></image>
+        </view>
         <view class="ml20">
           <view class="f36">天下第一厨神</view>
           <view class="mt10 f24">2017-06-25</view>
         </view>
       </view>
-      <view class="author-set">
-        <text class="status st-red f30">关注</text>
+      <view class="owner-set">
+        <text class="status st-red f26">关注</text>
       </view>
     </view>
   </view>
@@ -34,7 +36,7 @@
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
         <!-- 楼层内元素开始 -->
-        <view class="item item-cookbook">
+        <view class="item cookbook-item">
           <view class="item-icon-tip">
             <view class="item-icon-tip-name">
               <text class="f60 iconfont icon-pingjia color-blue"></text>
@@ -45,7 +47,7 @@
               <text class="f24 color-gray4">养胃</text>
             </view>
           </view>
-          <view class="div"></view>
+          <!--<view class="div"></view>-->
           <view class="item-icon-tip">
             <view class="item-icon-tip-name">
               <text class="f60 iconfont icon-pingjia color-blue"></text>
@@ -67,7 +69,7 @@
         </view>
         <!-- 楼层内元素结束 -->
         <!-- 楼层内元素开始 -->
-        <view class="item item-cookbook">
+        <view class="item">
           <!-- 元素图片开始 -->
           <text class="paragraph">这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。这里是一长段图片描述巴拉巴拉巴拉。。。。。</text>
         </view>
@@ -87,7 +89,7 @@
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
         <!-- 楼层内元素开始 -->
-        <view class="item item-set f30">
+        <view class="item grid-item f30">
           <view class="item-row">
             <text class="item-col">猪瘦肉</text>
             <text class="item-col">500g</text>
@@ -117,7 +119,7 @@
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
         <!-- 楼层内元素开始 -->
-        <view class="item item-set f30">
+        <view class="item grid-item f30">
           <view class="item-row">
             <text class="item-col">猪瘦肉</text>
             <text class="item-col">500g</text>

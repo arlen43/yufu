@@ -3,13 +3,6 @@
   height: 1206rpx;
 }
 
-.search-top {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 20rpx;
-  background: #4db718;
-}
 .search {
   justify-content: space-between;
 }

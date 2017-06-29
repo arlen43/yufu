@@ -4,9 +4,4 @@
 .item-chart {
   height: 300rpx !important;
 }
-.item-mine {
-  height: 160rpx !important;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+

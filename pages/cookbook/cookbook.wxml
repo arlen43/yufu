@@ -1,6 +1,6 @@
 <!-- 页面头部开始 -->
 <view class="container">
-  <view class="top top-tab">
+  <view class="top tab-top">
     <view class="toolbar">
       <view class="search">
         <text class="f36 iconfont icon-search"></text>

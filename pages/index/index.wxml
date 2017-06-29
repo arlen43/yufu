@@ -1,6 +1,6 @@
 <!-- 页面头部开始 -->
 <view class="container">
-<view class="top top-home">
+<view class="top home-top">
   <image class="top-back" src="/assets/images/top.jpg"></image>
   <view class="toolbar">
     <view class="top-left toolbar-left">
@@ -12,7 +12,7 @@
         <text class="f24">芦席营</text>
       </view>
     </view>
-    <view class="toolbar-right">
+    <view class="top-right toolbar-right">
       <view class="search" catchtap="goSearchCategory">
         <text class="f36 iconfont icon-search"></text>
         <text class="f24">芹菜肉大馄饨</text>
@@ -47,10 +47,10 @@
     <!-- 楼层主内容开始 -->
     <view class="fence-main">
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -75,10 +75,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -103,10 +103,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -146,10 +146,10 @@
     <!-- 楼层主内容开始 -->
     <view class="fence-main">
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food2.jpg"></image>
+          <image src="/assets/images/food2.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -175,10 +175,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food2.jpg"></image>
+          <image src="/assets/images/food2.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -204,10 +204,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food2.jpg"></image>
+          <image src="/assets/images/food2.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -248,10 +248,10 @@
     <!-- 楼层主内容开始 -->
     <view class="fence-main">
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -276,10 +276,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->
@@ -304,10 +304,10 @@
       <!-- 楼层内元素结束 -->
 
       <!-- 楼层内元素开始 -->
-      <view class="item">
+      <view class="item list-item">
         <!-- 元素图片开始 -->
         <view class="item-present">
-          <image class="item-image" src="/assets/images/food.jpg"></image>
+          <image src="/assets/images/food.jpg"></image>
         </view>
         <!-- 元素图片结束 -->
         <!-- 元素详情开始 -->

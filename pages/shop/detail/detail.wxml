@@ -1,15 +1,15 @@
 <view class="container">
-  <view class="top mine-top">
-    <view class="mine-main">
-      <view class="mine-img">
+  <view class="top mine-top owner-block">
+    <view class="owner-main">
+      <view class="owner-img">
         <image src="/assets/images/chef.jpg"></image>
       </view>
-      <view class="mine-info">
+      <view class="ml20">
         <view class="f36">老成都</view>
         <view class="mt10 f24">正宗的川菜，俺们四四川滴</view>
       </view>
     </view>
-    <view class="mine-set">
+    <view class="owner-set">
       <text class="f50 iconfont icon-collection"></text>
     </view>
   </view>
@@ -41,6 +41,7 @@
       
       <!-- 楼层主内容开始 -->
       <view class="fence-main">
+
         <!-- 楼层内元素开始 -->
         <view class="item">
           <!-- 元素图片开始 -->
@@ -53,9 +54,9 @@
             <view class="f34">四川麻辣烫</view>
             <view class="f24 mt5 color-gray6">已售23份，月售400份</view>
             <view class="color-red mt5">
-              <text class="f30 iconfont icon-lajiao"></text>
-              <text class="f30 iconfont icon-lajiao"></text>
-              <text class="f30 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
             </view>
             <view class="item-order f30">
               <text class="item-price color-orange">￥30</text>
@@ -69,13 +70,15 @@
           <!-- 元素详情结束 -->
         </view>
         <!-- 楼层内元素结束 -->
+
+
       </view>
       <!-- 楼层主内容结束 -->
     </view>
     <!-- tab 结束 -->
 
     <view id="booking" class="tab-main">
-
+      <!-- 日期、桌型、包间、人数 -->
     </view>
 
     <view id="comment" class="tab-main">
