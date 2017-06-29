@@ -66,6 +66,7 @@ page {background: #f0eff3;}
 /*工具栏左右布局*/
 .toolbar-left {
   display: flex;
+  align-items: flex-end;
 }
 .toolbar-right {
   height: 100%;
@@ -331,6 +332,11 @@ page {background: #f0eff3;}
 .item-big-img {
   width: 660rpx;
   height: 450rpx;
+}
+
+/************ 菜单页菜单项item，没有左padding ****/
+.menu-item {
+  padding-left: 0 !important;
 }
 
 /************ 页面底部定位工具栏 ***************/

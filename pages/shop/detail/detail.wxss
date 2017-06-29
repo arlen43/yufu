@@ -53,13 +53,6 @@
   background: #f7f7f9;
 }
 
-/*.item:first-child {
-  border-top: none;
-}
-.item {
-  height: inherit !important;
-}*/
-
 .item-price {
   flex: 1;
 }
@@ -123,4 +116,23 @@
   justify-content: center;
   align-items: center;
   background: #4db718;
+}
+
+.comment-left {
+  width: 230rpx;
+  margin: 20rpx 0;
+  padding: 0 20rpx;
+  border-right: 1rpx solid #aaa;
+  flex: 0 0 230rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-right {
+  flex: 1;
+  margin: 40rpx 0 40rpx 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

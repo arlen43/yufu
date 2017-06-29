@@ -11,7 +11,7 @@
           <text class="f24">芦席营</text>
         </view>
       </view>
-      <view class="toolbar-right">
+      <view class="top-right toolbar-right">
         <view class="search pr5">
           <text class="f36 iconfont icon-search"></text>
           <text class="f24">黄记焖锅</text>

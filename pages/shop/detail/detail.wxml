@@ -22,7 +22,7 @@
       <view class="tab">商家</view>
     </view>
     <!-- tab 开始 -->
-    <view id="order" class="tab-main">
+    <view id="order" class="tab-main" hidden="true">
       <scroll-view scroll-y="true" class="menu-left">
         <view class="f26 m-tab m-tab-active">酱汁烤鸭</view>
         <view class="f26 m-tab">酒水</view>
@@ -40,10 +40,10 @@
       </scroll-view>
       
       <!-- 楼层主内容开始 -->
-      <view class="fence-main">
+      <view class="fence-main ml20">
 
         <!-- 楼层内元素开始 -->
-        <view class="item">
+        <view class="item menu-item">
           <!-- 元素图片开始 -->
           <view class="item-present">
             <image class="item-image" src="/assets/images/food.jpg"></image>
@@ -71,6 +71,63 @@
         </view>
         <!-- 楼层内元素结束 -->
 
+        <!-- 楼层内元素开始 -->
+        <view class="item menu-item">
+          <!-- 元素图片开始 -->
+          <view class="item-present">
+            <image class="item-image" src="/assets/images/food.jpg"></image>
+          </view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-detail">
+            <view class="f34">四川麻辣烫</view>
+            <view class="f24 mt5 color-gray6">已售23份，月售400份</view>
+            <view class="color-red mt5">
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+            </view>
+            <view class="item-order f30">
+              <text class="item-price color-orange">￥30</text>
+              <view class="item-select color-green">
+                <text class="f60 iconfont icon-offline"></text>
+                <text class="item-order-num">1</text>
+                <text class="f60 iconfont icon-addition_fill"></text>
+              </view>
+            </view>
+          </view>
+          <!-- 元素详情结束 -->
+        </view>
+        <!-- 楼层内元素结束 -->
+
+        <!-- 楼层内元素开始 -->
+        <view class="item menu-item">
+          <!-- 元素图片开始 -->
+          <view class="item-present">
+            <image class="item-image" src="/assets/images/food.jpg"></image>
+          </view>
+          <!-- 元素图片结束 -->
+          <!-- 元素详情开始 -->
+          <view class="item-detail">
+            <view class="f34">四川麻辣烫</view>
+            <view class="f24 mt5 color-gray6">已售23份，月售400份</view>
+            <view class="color-red mt5">
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+              <text class="f26 iconfont icon-lajiao"></text>
+            </view>
+            <view class="item-order f30">
+              <text class="item-price color-orange">￥30</text>
+              <view class="item-select color-green">
+                <text class="f60 iconfont icon-offline"></text>
+                <text class="item-order-num">1</text>
+                <text class="f60 iconfont icon-addition_fill"></text>
+              </view>
+            </view>
+          </view>
+          <!-- 元素详情结束 -->
+        </view>
+        <!-- 楼层内元素结束 -->
 
       </view>
       <!-- 楼层主内容结束 -->
@@ -82,6 +139,68 @@
     </view>
 
     <view id="comment" class="tab-main">
+      <!-- 楼层内元素开始 -->
+      <view class="item">
+        <view class="comment-left">
+          <view class="f60 color-orange">4.4</view>
+          <view class="f30">综合评分</view>
+          <view class="f26">好评率89%</view>
+        </view>
+        <view class="comment-right">
+          <view class="comment-row">
+            <text class="f30">商家评分</text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange">4.8</text>
+          </view>
+          <view class="comment-row">
+            <text class="f30">商家评分</text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange iconfont icon-like_fill"></text>
+            <text class="f30 color-orange">4.8</text>
+          </view>
+        </view>          
+      </view>
+      <!-- 楼层内元素结束 -->
+      
+      <!-- 楼层开始 -->
+      <view class="fence color-gray3">
+        
+          <!-- 楼层内元素开始 -->
+          <view class="item list-item">
+            <!-- 元素图片开始 -->
+            <view class="item-present">
+              <image src="/assets/images/food.jpg"></image>
+            </view>
+            <!-- 元素图片结束 -->
+            <!-- 元素详情开始 -->
+            <view class="item-detail">
+              <view class="item-title f34">白菜猪肉馅饺子</view>
+              <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
+              <view class="item-author">
+                <image src="/assets/images/chef.jpg"></image>
+                <text class="pl5 f24 color-gray6">北方厨房</text>
+              </view>
+              <view class="item-exta">
+                <image src="/assets/images/appraise.png"></image>
+                <text class="pl5 f24 color-gray6">已有23047人评价</text>
+              </view>
+            </view>
+            <!-- 元素详情结束 -->
+            <view class="item-operate">
+              <view class="button bt-green f24">去点菜</view>
+              <view class="button bt-purple f24 mt20" catchtap="goCookDetail">自己做</view>
+            </view>
+          </view>
+          <!-- 楼层内元素结束 -->
+          
+      </view>
 
     </view>
     <view id="shop" class="tab-main">
