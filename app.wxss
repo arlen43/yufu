@@ -158,7 +158,7 @@ page {background: #f0eff3;}
 /**************** item，占整屏 *************/
 .item {
   display: flex;
-  padding: 10rpx 20rpx 10rpx 20rpx;
+  padding: 10rpx 20rpx;
   border-bottom: 1rpx solid #a0a0a0;
 }
 .item:last-child {
@@ -336,7 +336,8 @@ page {background: #f0eff3;}
 
 /************ 菜单页菜单项item，没有左padding ****/
 .menu-item {
-  padding-left: 0 !important;
+  /*padding-left: 0 !important;*/
+  background: #f7f7f9;
 }
 
 /************ 页面底部定位工具栏 ***************/

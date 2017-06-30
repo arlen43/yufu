@@ -1,4 +1,6 @@
 /* pages/shop/detail/detail.wxss */
+/* 引入腾讯weui，鬼东西那么大，真不想用 */
+@import "/assets/style/weui.wxss";
 
 .tab-bar {
   display: flex;
@@ -18,10 +20,16 @@
   color: #4db718;
 }
 
-.tab-main {
-  background: #f7f7f9;
+/*.menu {*/
+  /*background: #f7f7f9;*/
+/*}*/
+.row-tab {
   display: flex;
   justify-content: space-between;
+}
+.col-tab {
+  display: flex;
+  flex-direction: column;
 }
 #order {
   margin-bottom: 100rpx;
@@ -35,8 +43,11 @@
   display: flex;
   flex-direction: column;
 }
-.fence-main {
+.menu-right {
+  height: 1022rpx;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .m-tab {
@@ -134,5 +145,26 @@
   margin: 40rpx 0 40rpx 80rpx;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.comment-item {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-head image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+  flex: 0 0 100rpx;
+}
+.comment-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-title {
+  display: flex;
   justify-content: space-between;
 }
