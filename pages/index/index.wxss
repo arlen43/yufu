@@ -37,6 +37,7 @@
 .recommend-right {
   margin-left: 20rpx;
   word-break: break-all;
+  word-wrap: break-word;
 }
 .recommend-food {
   text-align: center;

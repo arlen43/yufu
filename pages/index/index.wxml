@@ -4,7 +4,7 @@
   <image class="top-back" src="/assets/images/top.jpg"></image>
   <view class="toolbar">
     <view class="top-left toolbar-left">
-      <view class="scan">
+      <view class="scan" catchtap = "openScaner">
         <text class="f60 iconfont icon-scan"></text>
       </view>
       <view class="location">

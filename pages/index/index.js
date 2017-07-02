@@ -3,16 +3,29 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hello: '王志君大佬好'
+    userInfo: {}
   },
   //事件处理函数
+  // 跳转事件开始
   goSearchCategory: function() {
     wx.navigateTo({url: "../search/search"});
   },
   goCookDetail: function() {
     wx.navigateTo({url: "../cookbook/detail/detail"});
+  },
+  goLocation: function() {
+    console.log("go location");
+  },
+  // toolbar
+  openScaner: function() {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res);
+      },
+      fail: (res) => {
+        console.log(res);
+      }
+    })
   },
   bindViewTap: function() {
     wx.navigateTo({

@@ -1,4 +1,6 @@
 //app.js
+var util = require("/assets/script/util.js");
+
 App({
   onLaunch: function () {
     // 监听小程序初始化，可传入参数scene，以便营销统计
@@ -17,6 +19,7 @@ App({
     // 错误监听，小程序发生脚本错误，或api调用失败
   },
   // 全局方法，在本文件通过this访问，在其他文件通过getApp访问
+  util: util,
   getUserInfo:function(cb){
     var that = this
     if(this.globalData.userInfo){

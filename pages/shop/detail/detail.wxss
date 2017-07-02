@@ -1,6 +1,6 @@
 /* pages/shop/detail/detail.wxss */
 /* 引入腾讯weui，鬼东西那么大，真不想用 */
-@import "/assets/style/weui.wxss";
+/*@import "/assets/style/weui.wxss";*/
 
 .tab-bar {
   display: flex;

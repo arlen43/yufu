@@ -271,6 +271,7 @@ page {background: #f0eff3;}
 }
 .item-row {
   height: 80rpx;
+  line-height: 80rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,3 +365,24 @@ page {background: #f0eff3;}
   text-align: center;
 }
 
+/*********** form相关 **********/
+.cell {
+  display: flex;
+  align-items: center;
+}
+.cell-label {
+  width: 150rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.cell-body {
+  flex: 1;
+}
+.cell-extra {
+  width: 150rpx;
+  height: 100%;
+  text-align: center;
+  border-left: 1rpx solid #aaa;
+  word-wrap: break-word;
+  word-break: break-all;
+}
