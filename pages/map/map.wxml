@@ -1,0 +1,12 @@
+<!-- map.wxml -->
+<!--<map id="myMap" show-location />-->
+
+<button type="primary" bindtap="getCenterLocation">获取位置</button>
+<button type="primary" bindtap="moveToLocation">移动位置</button>
+<button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button>
+
+<view class="map_container">
+  <!--定义页面结构，可以使用地图组件也能使用其他组件 -->
+  <map id="myMap" show-location />
+</view>

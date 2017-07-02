@@ -9,8 +9,8 @@
     "pages/shop/detail/detail",
     "pages/mine/mine",
     "pages/search/search",
-    "pages/logs/logs",
-    "pages/test/test"
+    "pages/map/map",
+    "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#4db718",

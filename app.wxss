@@ -80,6 +80,13 @@ page {background: #f0eff3;}
   display: flex;
   align-items: flex-end;
 }
+.location-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150rpx;
+  flex: 0 0 150rpx;
+}
 /*搜索外框*/
 .search {
   flex: 1 1 auto;

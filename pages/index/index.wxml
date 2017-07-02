@@ -7,9 +7,9 @@
       <view class="scan" catchtap = "openScaner">
         <text class="f60 iconfont icon-scan"></text>
       </view>
-      <view class="location">
+      <view class="location" catchtap="goLocation">
         <text class="f60 iconfont icon-coordinates"></text>
-        <text class="f24">芦席营</text>
+        <text class="f24 location-text">芦席营97号10楼</text>
       </view>
     </view>
     <view class="top-right toolbar-right">
