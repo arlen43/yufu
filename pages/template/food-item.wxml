@@ -13,7 +13,7 @@
         <image src="{{author.img}}"></image>
         <text class="pl5 f24 color-gray6">{{author.name}}</text>
       </view>
-      <view class="item-exta f26 color-orange">
+      <view class="item-exta f26 color-green">
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>
@@ -47,7 +47,7 @@
         <image src="{{author.img}}" class="ml5"></image>
         <text class="pl5 f24 color-gray6">鱼小宝等8位朋友吃过</text>
       </view>
-      <view class="item-exta f26 color-orange">
+      <view class="item-exta f26 color-green">
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>
@@ -81,7 +81,7 @@
         <image src="{{author2.img}}" class="ml5"></image>
         <text class="pl5 f24 color-gray6">大卫等8位吃友吃过</text>
       </view>
-      <view class="item-exta f26 color-orange">
+      <view class="item-exta f26 color-green">
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>
         <text class="iconfont icon-collection_fill"></text>

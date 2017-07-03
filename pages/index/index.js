@@ -36,7 +36,7 @@ Page({
           description: '四川著名蒜泥白肉，肉质鲜嫩'
         },
         author: {
-          img: '/assets/images/chef2.png',
+          img: '/assets/images/chef2.jpg',
           name: '四川人'
         },
         comment: {
