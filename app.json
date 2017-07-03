@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/index/recommend/recommend",
     "pages/cookbook/cookbook",
     "pages/cookbook/detail/detail",
     "pages/cookbook/edit/edit",

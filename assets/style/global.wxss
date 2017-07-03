@@ -1,6 +1,10 @@
 /**global.wxss**/
 
 /* 页面边距 */
+.mt5 { margin-top: 5rpx; }
+.mr5 { margin-right: 5rpx; }
+.mb5 { margin-bottom: 5rpx; }
+.ml5 { margin-left: 5rpx; }
 .mt10 { margin-top: 10rpx; }
 .mr10 { margin-right: 10rpx; }
 .mb10 { margin-bottom: 10rpx; }

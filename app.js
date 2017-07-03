@@ -1,8 +1,10 @@
 //app.js
 var util = require("/assets/script/util.js");
+var amapFile = require('/lib/amap-sdk/amap-wx.js');
+let config = require("config.js");
 
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 监听小程序初始化，可传入参数scene，以便营销统计
     // 调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || [];
@@ -20,25 +22,47 @@ App({
   },
   // 全局方法，在本文件通过this访问，在其他文件通过getApp访问
   util: util,
-  getUserInfo:function(cb){
-    var that = this
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
+  amap: amapFile,
+  /**
+   * 获取登录用户信息
+   * @param callback
+   */
+  getUserInfo: function(callback) {
+    if (this.globalData.userInfo) {
+      typeof callback === "function" && callback(this.globalData.userInfo);
+    } else {
       //调用登录接口
       wx.login({
-        success: function () {
+        success: () => {
           wx.getUserInfo({
-            success: function (res) {
-              that.globalData.userInfo = res.userInfo
-              typeof cb == "function" && cb(that.globalData.userInfo)
+            success: (res) => {
+              this.globalData.userInfo = res.userInfo;
+              typeof callback === "function" && callback(this.globalData.userInfo);
             }
           })
         }
       })
     }
   },
-  requestData: function() {
+  /**
+   * 高德地图逆地址解析
+   * @param callback
+   */
+  getRegeo: callback => {
+    let amap = new amapFile.AMapWX({key: config.amap.key});
+    amap.getRegeo({
+      success: data => {
+        console.log(data);
+        console.log('in app');
+        typeof callback === "function" && callback(data);
+      },
+      fail: function(info){
+        //失败回调
+        console.log(info);
+      }
+    });
+  },
+  requestData: function () {
     if (wx.openBluetoothAdapter) {
       wx.openBluetoothAdapter()
     } else {
@@ -50,7 +74,7 @@ App({
     }
   },
   // 全局数据
-  globalData:{
-    userInfo:null
+  globalData: {
+    userInfo: null
   }
-})
+});

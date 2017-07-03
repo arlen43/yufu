@@ -1,25 +1,29 @@
+<import src="../template/food-item.wxml" />
 <!-- 页面头部开始 -->
 <view class="container">
 <view class="top home-top">
   <image class="top-back" src="/assets/images/top.jpg"></image>
+  <!-- 工具栏开始 -->
   <view class="toolbar">
     <view class="top-left toolbar-left">
       <view class="scan" catchtap = "openScaner">
         <text class="f60 iconfont icon-scan"></text>
       </view>
-      <view class="location" catchtap="goLocation">
+      <view class="location" catchtap="chooseLocation">
         <text class="f60 iconfont icon-coordinates"></text>
-        <text class="f24 location-text">芦席营97号10楼</text>
+        <text class="f24 location-text">{{toolbar.location}}</text>
       </view>
     </view>
     <view class="top-right toolbar-right">
-      <view class="search" catchtap="goSearchCategory">
+      <view class="search" catchtap="naviToSearchPage">
         <text class="f36 iconfont icon-search"></text>
-        <text class="f24">芹菜肉大馄饨</text>
+        <text class="f24">{{toolbar.searchKey}}</text>
       </view>
     </view>
   </view>
-  <view class="recommend">
+  <!-- 工具栏结束 -->
+  <!-- 今日推荐开始 -->
+  <view class="recommend" catchtap="naviToRecommentPage">
     <view class="recommend-label f24">今日推荐</view>
     <view class="recommend-main">
       <view class="top-left recommend-left">
@@ -32,6 +36,7 @@
       </view>
     </view>
   </view>
+  <!-- 今日推荐结束 -->
 </view>
 
 <!-- 主页面开始 -->
@@ -41,95 +46,12 @@
     <!-- 楼层头部开始 -->
     <view class="fence-top">
       <view class="pl20 fence-title f30">午餐推荐</view>
-      <view class="fence-more f24 color-gray6">更多></view>
+      <view class="fence-more f24 color-gray6" catchtap="naviToCookPage">更多></view>
     </view>
     <!-- 楼层头部结束 -->
     <!-- 楼层主内容开始 -->
-    <view class="fence-main">
-      <!-- 楼层内元素开始 -->
-      <view class="item list-item">
-        <!-- 元素图片开始 -->
-        <view class="item-present">
-          <image src="/assets/images/food.jpg"></image>
-        </view>
-        <!-- 元素图片结束 -->
-        <!-- 元素详情开始 -->
-        <view class="item-detail">
-          <view class="item-title f34">白菜猪肉馅饺子</view>
-          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
-          <view class="item-author">
-            <image src="/assets/images/chef.jpg"></image>
-            <text class="pl5 f24 color-gray6">北方厨房</text>
-          </view>
-          <view class="item-exta">
-            <image src="/assets/images/appraise.png"></image>
-            <text class="pl5 f24 color-gray6">已有23047人评价</text>
-          </view>
-        </view>
-        <!-- 元素详情结束 -->
-        <view class="item-operate">
-          <view class="button bt-green f24">去点菜</view>
-          <view class="button bt-purple f24 mt20" catchtap="goCookDetail">自己做</view>
-        </view>
-      </view>
-      <!-- 楼层内元素结束 -->
-
-      <!-- 楼层内元素开始 -->
-      <view class="item list-item">
-        <!-- 元素图片开始 -->
-        <view class="item-present">
-          <image src="/assets/images/food.jpg"></image>
-        </view>
-        <!-- 元素图片结束 -->
-        <!-- 元素详情开始 -->
-        <view class="item-detail">
-          <view class="item-title f34">白菜猪肉馅饺子</view>
-          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
-          <view class="item-author">
-            <image src="/assets/images/chef.jpg"></image>
-            <text class="pl5 f24 color-gray6">北方厨房</text>
-          </view>
-          <view class="item-exta">
-            <image src="/assets/images/appraise.png"></image>
-            <text class="pl5 f24 color-gray6">已有23047人评价</text>
-          </view>
-        </view>
-        <!-- 元素详情结束 -->
-        <view class="item-operate">
-          <view class="button bt-green f24">去点菜</view>
-          <view class="button bt-purple f24 mt20">自己做</view>
-        </view>
-      </view>
-      <!-- 楼层内元素结束 -->
-
-      <!-- 楼层内元素开始 -->
-      <view class="item list-item">
-        <!-- 元素图片开始 -->
-        <view class="item-present">
-          <image src="/assets/images/food.jpg"></image>
-        </view>
-        <!-- 元素图片结束 -->
-        <!-- 元素详情开始 -->
-        <view class="item-detail">
-          <view class="item-title f34">白菜猪肉馅饺子</view>
-          <view class="item-desc f24 color-gray6">白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁...</view>
-          <view class="item-author">
-            <image src="/assets/images/chef.jpg"></image>
-            <text class="pl5 f24 color-gray6">北方厨房</text>
-          </view>
-          <view class="item-exta">
-            <image src="/assets/images/appraise.png"></image>
-            <text class="pl5 f24 color-gray6">已有23047人评价</text>
-          </view>
-        </view>
-        <!-- 元素详情结束 -->
-        <view class="item-operate">
-          <view class="button bt-green f24">去点菜</view>
-          <view class="button bt-purple f24 mt20">自己做</view>
-        </view>
-      </view>
-      <!-- 楼层内元素结束 -->
-
+    <view class="fence-main" wx:for="{{foodList}}" wx:key="id">
+      <template is="food-item" data="{{...item}}" />
     </view>
     <!-- 楼层主内容结束 -->
   </view>
@@ -143,6 +65,11 @@
       <view class="fence-more f24 color-gray6">更多></view>
     </view>
     <!-- 楼层头部结束 -->
+    <!-- 楼层主内容开始 -->
+    <view class="fence-main" wx:for="{{foodList}}" wx:key="id">
+      <template is="friend-food-item" data="{{...item}}" />
+    </view>
+    <!-- 楼层主内容结束 -->
     <!-- 楼层主内容开始 -->
     <view class="fence-main">
       <!-- 楼层内元素开始 -->
