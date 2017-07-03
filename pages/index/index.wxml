@@ -1,4 +1,5 @@
 <import src="../template/food-item.wxml" />
+<import src="../template/dietitian-item.wxml" />
 <!-- 页面头部开始 -->
 <view class="container">
 <view class="top home-top">
@@ -17,7 +18,7 @@
     <view class="top-right toolbar-right">
       <view class="search" catchtap="naviToSearchPage">
         <text class="f36 iconfont icon-search"></text>
-        <text class="f24">{{toolbar.searchKey}}</text>
+        <text class="f26">{{toolbar.searchKey}}</text>
       </view>
     </view>
   </view>
@@ -50,8 +51,10 @@
     </view>
     <!-- 楼层头部结束 -->
     <!-- 楼层主内容开始 -->
-    <view class="fence-main" wx:for="{{foodList}}" wx:key="id">
-      <template is="food-item" data="{{...item}}" />
+    <view class="fence-main">
+      <view class="item list-item" wx:for="{{foodList}}" wx:key="id">
+        <template is="food-item" data="{{...item}}" />
+      </view>
     </view>
     <!-- 楼层主内容结束 -->
   </view>
@@ -66,8 +69,10 @@
     </view>
     <!-- 楼层头部结束 -->
     <!-- 楼层主内容开始 -->
-    <view class="fence-main" wx:for="{{foodList}}" wx:key="id">
-      <template is="friend-food-item" data="{{...item}}" />
+    <view class="fence-main">
+      <view class="item list-item" wx:for="{{foodList}}" wx:key="id">
+        <template is="friend-food-item" data="{{...item}}" />
+      </view>
     </view>
     <!-- 楼层主内容结束 -->
   </view>
@@ -82,13 +87,31 @@
     </view>
     <!-- 楼层头部结束 -->
     <!-- 楼层主内容开始 -->
-    <view class="fence-main" wx:for="{{foodList}}" wx:key="id">
-      <template is="near-food-item" data="{{...item}}" />
+    <view class="fence-main">
+      <view class="item list-item" wx:for="{{foodList}}" wx:key="id">
+        <template is="near-food-item" data="{{...item}}" />
+      </view>
     </view>
     <!-- 楼层主内容结束 -->
   </view>
   <!-- 楼层结束 -->
-
+  <!-- 楼层开始 -->
+  <view class="fence color-gray3">
+    <!-- 楼层头部开始 -->
+    <view class="fence-top">
+      <view class="pl20 fence-title f30">营养师推荐</view>
+      <view class="fence-more f24 color-gray6" catchtap="naviToCookPage">更多></view>
+    </view>
+    <!-- 楼层头部结束 -->
+    <!-- 楼层主内容开始 -->
+    <view class="fence-main">
+      <view class="item list-item" wx:for="{{dietitianList}}" wx:key="id">
+        <template is="dietitian-item" data="{{...item}}" />
+      </view>
+    </view>
+    <!-- 楼层主内容结束 -->
+  </view>
+  <!-- 楼层结束 -->
 </view>
 <!-- 主页面结束 -->
 <view class="f24 color-grayD bottom-tip">~鱼小宝已经长不高啦~</view>

@@ -1,99 +1,93 @@
 <template name="food-item">
-  <view class="item list-item">
-    <!-- 元素图片开始 -->
-    <view class="item-present">
-      <image src="{{food.img}}"></image>
+  <!-- 元素图片开始 -->
+  <view class="item-present">
+    <image src="{{food.img}}"></image>
+  </view>
+  <!-- 元素图片结束 -->
+  <!-- 元素详情开始 -->
+  <view class="item-detail">
+    <view class="item-title f34">{{food.name}}</view>
+    <view class="item-desc f24 color-gray6">{{food.description}}</view>
+    <view class="item-author">
+      <image src="{{author.img}}"></image>
+      <text class="pl5 f24 color-gray6">{{author.name}}</text>
     </view>
-    <!-- 元素图片结束 -->
-    <!-- 元素详情开始 -->
-    <view class="item-detail">
-      <view class="item-title f34">{{food.name}}</view>
-      <view class="item-desc f24 color-gray6">{{food.description}}</view>
-      <view class="item-author">
-        <image src="{{author.img}}"></image>
-        <text class="pl5 f24 color-gray6">{{author.name}}</text>
-      </view>
-      <view class="item-exta f26 color-green">
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="pl5 f24 color-gray6">已有{{comment.count}}人评价</text>
-      </view>
+    <view class="item-exta f24 color-green">
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="pl5 color-gray6">已有{{comment.count}}人评价</text>
     </view>
-    <!-- 元素详情结束 -->
-    <view class="item-operate">
-      <view class="button bt-green f24" catchtap="naviToShopPage">去点菜</view>
-      <view class="button bt-purple f24 mt20" catchtap="naviToCookDetail">自己做</view>
-    </view>
+  </view>
+  <!-- 元素详情结束 -->
+  <view class="item-operate">
+    <view class="button bt-green f24" catchtap="naviToShopPage">去点菜</view>
+    <view class="button bt-purple f24 mt20" catchtap="naviToCookDetail">自己做</view>
   </view>
 </template>
 
 <template name="friend-food-item">
-  <view class="item list-item">
-    <!-- 元素图片开始 -->
-    <view class="item-present">
-      <image src="{{food.img}}"></image>
+  <!-- 元素图片开始 -->
+  <view class="item-present">
+    <image src="{{food.img}}"></image>
+  </view>
+  <!-- 元素图片结束 -->
+  <!-- 元素详情开始 -->
+  <view class="item-detail">
+    <view class="item-title f34">{{food.name}}</view>
+    <view class="item-desc f24 color-gray6">{{food.description}}</view>
+    <view class="item-author">
+      <image src="{{author.img}}"></image>
+      <image src="{{author.img}}" class="ml5"></image>
+      <image src="{{author.img}}" class="ml5"></image>
+      <text class="pl5 f24 color-gray6">鱼小宝等8位朋友吃过</text>
     </view>
-    <!-- 元素图片结束 -->
-    <!-- 元素详情开始 -->
-    <view class="item-detail">
-      <view class="item-title f34">{{food.name}}</view>
-      <view class="item-desc f24 color-gray6">{{food.description}}</view>
-      <view class="item-author">
-        <image src="{{author.img}}"></image>
-        <image src="{{author.img}}" class="ml5"></image>
-        <image src="{{author.img}}" class="ml5"></image>
-        <text class="pl5 f24 color-gray6">鱼小宝等8位朋友吃过</text>
-      </view>
-      <view class="item-exta f26 color-green">
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="color-gray8 iconfont icon-collection_fill"></text>
-        <text class="pl5 f24 color-gray6">已有{{comment.count}}人评价</text>
-      </view>
+    <view class="item-exta f24 color-green">
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 color-gray8 iconfont icon-collection_fill"></text>
+      <text class="pl5 color-gray6">已有{{comment.count}}人评价</text>
     </view>
-    <!-- 元素详情结束 -->
-    <view class="item-operate">
-      <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
-      <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
-    </view>
+  </view>
+  <!-- 元素详情结束 -->
+  <view class="item-operate">
+    <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
+    <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
   </view>
 </template>
 
 <template name="near-food-item">
-  <view class="item list-item">
-    <!-- 元素图片开始 -->
-    <view class="item-present">
-      <image src="{{food.img}}"></image>
+  <!-- 元素图片开始 -->
+  <view class="item-present">
+    <image src="{{food.img}}"></image>
+  </view>
+  <!-- 元素图片结束 -->
+  <!-- 元素详情开始 -->
+  <view class="item-detail">
+    <view class="item-title f34">{{food.name}}</view>
+    <view class="item-desc f24 color-gray6">{{food.description}}</view>
+    <view class="item-author">
+      <image src="{{author.img}}"></image>
+      <image src="{{food.img}}" class="ml5"></image>
+      <image src="{{author.img}}" class="ml5"></image>
+      <text class="pl5 f24 color-gray6">大卫等8位吃友吃过</text>
     </view>
-    <!-- 元素图片结束 -->
-    <!-- 元素详情开始 -->
-    <view class="item-detail">
-      <view class="item-title f34">{{food.name}}</view>
-      <view class="item-desc f24 color-gray6">{{food.description}}</view>
-      <view class="item-author">
-        <image src="{{author2.img}}"></image>
-        <image src="{{author.img}}" class="ml5"></image>
-        <image src="{{author2.img}}" class="ml5"></image>
-        <text class="pl5 f24 color-gray6">大卫等8位吃友吃过</text>
-      </view>
-      <view class="item-exta f26 color-green">
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="iconfont icon-collection_fill"></text>
-        <text class="color-gray8 iconfont icon-collection_fill"></text>
-        <text class="color-gray8 iconfont icon-collection_fill"></text>
-        <text class="pl5 f24 color-gray6">已有{{comment.count}}人评价</text>
-      </view>
+    <view class="item-exta f24 color-green">
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 color-gray8 iconfont icon-collection_fill"></text>
+      <text class="f30 color-gray8 iconfont icon-collection_fill"></text>
+      <text class="pl5 color-gray6">已有{{comment.count}}人评价</text>
     </view>
-    <!-- 元素详情结束 -->
-    <view class="item-operate">
-      <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
-      <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
-    </view>
+  </view>
+  <!-- 元素详情结束 -->
+  <view class="item-operate">
+    <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
+    <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
   </view>
 </template>

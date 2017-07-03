@@ -1,11 +1,11 @@
 <view class="container color-white">
   <view class="top search-top">
-    <view class="search" catchtap="goSearchCategory">
+    <view class="search">
       <text class="f36 iconfont icon-search"></text>
-      <input class="f30" placeholder-class="f30 color-lgreen" 
-            placeholder="搜索菜谱或店铺" focus="true" value=""
+      <input class="f26 color-white" placeholder-class="f26 color-lgreen" 
+            placeholder="搜索菜谱或店铺" focus="true" value="{{searchKey}}"
             maxlength="20" confirm-type="search" bindconfirm="goSearch" />
-      <text class="f36 iconfont icon-delete_fill"></text>
+      <text class="f36 iconfont icon-delete_fill" catchtap="clearSearchInput"></text>
     </view>
     <view class="f30 ml20">取消</view>
   </view>

@@ -7,9 +7,9 @@ App({
   onLaunch: function() {
     // 监听小程序初始化，可传入参数scene，以便营销统计
     // 调用API从本地缓存中获取数据
-    var logs = wx.getStorageSync('logs') || [];
-    logs.unshift(Date.now());
-    wx.setStorageSync('logs', logs);
+    // var logs = wx.getStorageSync('logs') || [];
+    // logs.unshift(Date.now());
+    // wx.setStorageSync('logs', logs);
   },
   onShow: function() {
     // 监听小程序显示，小程序启动或从后台进入前台，可传入参数scene，以便营销统计

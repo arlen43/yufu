@@ -57,7 +57,45 @@ Page({
         },
         comment: {
           score: 3.5,
-          count: 2047
+          count: 2033
+        }
+      }
+    ],
+    dietitianList: [
+      {
+        id: 1,
+        dietitian: {
+          name: '天天向上',
+          description: '擅长哺乳期营养调节，让您保持身材的同时',
+          img: '/assets/images/chef.jpg'
+        },
+        comment: {
+          score: 3.5,
+          count: 2042
+        }
+      },
+      {
+        id: 1,
+        dietitian: {
+          name: '过百不是梦',
+          description: '擅长对体型较瘦的朋友调节饮食，根据你您的体质定制您能吸收的',
+          img: '/assets/images/chef.jpg'
+        },
+        comment: {
+          score: 3.5,
+          count: 9999
+        }
+      },
+      {
+        id: 1,
+        dietitian: {
+          name: '天天向上',
+          description: '擅长哺乳期营养调节，让您保持身材的同时',
+          img: '/assets/images/chef.jpg'
+        },
+        comment: {
+          score: 3.5,
+          count: 2042
         }
       }
     ]
@@ -65,7 +103,7 @@ Page({
   // 事件处理函数
   // 跳转事件开始
 
-    onLoad: function () {
+  onLoad: function () {
     // 调用应用实例的方法获取全局数据
     app.getUserInfo(userInfo => {
       // 更新数据
@@ -74,6 +112,7 @@ Page({
       });
     });
     this.locationInit();
+    this.searchKeyInit();
   },
   onReady: function () {
 
@@ -107,6 +146,7 @@ Page({
   },
   searchKeyInit: function() {
     this.setData({"toolbar.searchKey": '初始化搜索'});
+    wx.setStorageSync('searchKey', '初始化搜索');
   },
   openScaner: function() {
     wx.scanCode({
@@ -128,7 +168,6 @@ Page({
     // wx.navigateTo({url: "../map/map"});
     wx.chooseLocation({
       success: (res) => {
-        console.log(res);
         if (res && res.name) {
           this.setData({"toolbar.location": res.name});
         }

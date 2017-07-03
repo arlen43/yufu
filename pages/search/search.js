@@ -5,17 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    searchKey: '输入内容搜索',
   },
   goSearch: function() {
     console.log('sdfsfsf');
   },
-
+  clearSearchInput: function() {
+    this.setData({searchKey: ''});
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let searchKey = wx.getStorageSync('searchKey') || '输入内容搜索';
+    this.setData({searchKey: searchKey});
   },
 
   /**

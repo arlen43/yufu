@@ -200,7 +200,7 @@ page {background: #f0eff3;}
   overflow: hidden;
   white-space: nowrap;
   flex: 1;
-  width: 360rpx;
+  width: 370rpx;
 }
 .item-author {
   flex: 1;
