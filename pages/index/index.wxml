@@ -24,7 +24,7 @@
   </view>
   <!-- 工具栏结束 -->
   <!-- 今日推荐开始 -->
-  <view class="recommend" catchtap="naviToRecommentPage">
+  <view class="recommend" catchtap="naviToRecomment">
     <view class="recommend-label f24">今日推荐</view>
     <view class="recommend-main">
       <view class="top-left recommend-left">

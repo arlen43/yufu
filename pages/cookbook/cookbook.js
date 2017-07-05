@@ -5,14 +5,83 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    searchKey: '',
+    foodList: [
+      {
+        id: 1,
+        food: {
+          img: '/assets/images/food.jpg',
+          name: '白菜猪肉馅饺子',
+          description: '白菜猪肉馅饺子味鲜，耐吃，配上秘制酱汁'
+        },
+        author: {
+          img: '/assets/images/chef.jpg',
+          name: '北方厨房'
+        },
+        comment: {
+          score: 3.5,
+          count: 1024
+        }
+      },
+      {
+        id: 2,
+        food: {
+          img: '/assets/images/food2.jpg',
+          name: '蒜泥白肉',
+          description: '四川著名蒜泥白肉，肉质鲜嫩'
+        },
+        author: {
+          img: '/assets/images/chef2.jpg',
+          name: '四川人'
+        },
+        comment: {
+          score: 3.5,
+          count: 2047
+        }
+      },
+      {
+        id: 3,
+        food: {
+          img: '/assets/images/food.jpg',
+          name: '蒜泥白肉',
+          description: '四川著名蒜泥白肉，肉质鲜嫩'
+        },
+        author: {
+          img: '/assets/images/chef.jpg',
+          name: '四川人'
+        },
+        comment: {
+          score: 3.5,
+          count: 2033
+        }
+      },
+      {
+        id: 4,
+        food: {
+          img: '/assets/images/food2.jpg',
+          name: '蒜泥白肉',
+          description: '四川著名蒜泥白肉，肉质鲜嫩'
+        },
+        author: {
+          img: '/assets/images/chef2.jpg',
+          name: '四川人'
+        },
+        comment: {
+          score: 3.5,
+          count: 2047
+        }
+      },
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let searchKey = wx.getStorageSync('searchKey') || '输入内容搜索';
+    if (searchKey && searchKey.length !== 0 && searchKey.trim().length !== 0) {
+      this.setData({searchKey: searchKey});
+    }
   },
 
   /**

@@ -1,0 +1,31 @@
+<template name="shop-item">
+  <!-- 元素图片开始 -->
+  <view class="item-present">
+    <image src="{{shop.img}}"></image>
+  </view>
+  <!-- 元素图片结束 -->
+  <!-- 元素详情开始 -->
+  <view class="item-detail">
+    <view class="item-title f34">{{shop.name}}</view>
+    <view class="item-desc f24 color-gray6">{{shop.description}}</view>
+    <view class="item-author">
+      <text class="f30 color-orange iconfont icon-coupons"></text>
+      <text class="pl5 f24 color-gray6">立减5元</text>
+      <text class="f30 color-orange iconfont icon-coupons"></text>
+      <text class="pl5 f24 color-gray6">满100减20</text>
+    </view>
+    <view class="item-exta f24 color-green">
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="f30 iconfont icon-collection_fill"></text>
+      <text class="pl5 color-gray6">已有{{comment.count}}人评价</text>
+    </view>
+  </view>
+  <!-- 元素详情结束 -->
+  <view class="item-operate">
+    <view class="button bt-green f24" catchtap="naviToShopDetail">去点菜</view>
+    <view class="button bt-purple f24 mt20" catchtap="naviToShopDetail">去预约</view>
+  </view>
+</template>

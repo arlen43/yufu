@@ -5,10 +5,60 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    searchKey: '',
+    shopList: [
+      {
+        id: 1,
+        shop: {
+          img: '/assets/images/food.jpg',
+          name: '黄记焖锅',
+          description: '百年老店黄记焖锅，舌尖上的中国'
+        },
+        comment: {
+          score: 3.5,
+          count: 2212
+        }
+      },
+      {
+        id: 2,
+        shop: {
+          img: '/assets/images/food2.jpg',
+          name: '黄记焖锅',
+          description: '百年老店黄记焖锅，舌尖上的中国'
+        },
+        comment: {
+          score: 3.5,
+          count: 1
+        }
+      },
+      {
+        id: 3,
+        shop: {
+          img: '/assets/images/food.jpg',
+          name: '黄记焖锅',
+          description: '百年老店黄记焖锅，舌尖上的中国'
+        },
+        comment: {
+          score: 3.5,
+          count: 33
+        }
+      },
+      {
+        id: 4,
+        shop: {
+          img: '/assets/images/food2.jpg',
+          name: '黄记焖锅',
+          description: '百年老店黄记焖锅，舌尖上的中国'
+        },
+        comment: {
+          score: 3.5,
+          count: 1
+        }
+      }
+    ]
   },
 
-  goShopDetail: function() {
+  naviToShopDetail: function() {
     wx.navigateTo({url: "./detail/detail"});
   },
   
@@ -16,7 +66,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let searchKey = wx.getStorageSync('searchKey') || '输入内容搜索';
+    if (searchKey && searchKey.length !== 0 && searchKey.trim().length !== 0) {
+      this.setData({searchKey: searchKey});
+    }
   },
 
   /**
@@ -67,4 +120,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-})
+});

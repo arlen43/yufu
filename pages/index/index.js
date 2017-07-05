@@ -118,17 +118,17 @@ Page({
 
   },
   // ////////// 页面跳转开始 ////////////
-  naviToRecommentPage: function() {
+  naviToRecomment: function() {
     wx.navigateTo({url: "./recommend/recommend"});
   },
   naviToCookDetail: function() {
     wx.navigateTo({url: "../cookbook/detail/detail"});
   },
-  naviToCookPage: function() {
-    wx.navigateTo({url: "../cookbook/cookbook"});
+  switchCookPage: function() {
+    wx.switchTab({url: "../cookbook/cookbook"});
   },
-  naviToShopPage: function() {
-    wx.navigateTo({url: "../shop/shop"});
+  switchShopPage: function() {
+    wx.switchTab({url: "../shop/shop"});
   },
   // ~~~~~~~~~~ 页面跳转结束 ~~~~~~~~~~~
 

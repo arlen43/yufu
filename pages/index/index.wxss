@@ -48,11 +48,3 @@
   padding-left: 4rpx;
 }
 
-.dietitian-img {
-  width: 160rpx !important;
-  height: 160rpx !important;
-  border-radius: 160rpx !important;
-}
-.dietitian-desc {
-  width: 410rpx !important;
-}

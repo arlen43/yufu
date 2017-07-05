@@ -23,7 +23,7 @@
   </view>
   <!-- 元素详情结束 -->
   <view class="item-operate">
-    <view class="button bt-green f24" catchtap="naviToShopPage">去点菜</view>
+    <view class="button bt-green f24" catchtap="switchShopPage">去点菜</view>
     <view class="button bt-purple f24 mt20" catchtap="naviToCookDetail">自己做</view>
   </view>
 </template>
@@ -55,8 +55,8 @@
   </view>
   <!-- 元素详情结束 -->
   <view class="item-operate">
-    <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
-    <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
+    <view class="button bt-green f24" catchtap="switchShopPage">找商家</view>
+    <view class="button bt-orange f24 mt20" catchtap="switchCookPage">找菜谱</view>
   </view>
 </template>
 
@@ -87,7 +87,7 @@
   </view>
   <!-- 元素详情结束 -->
   <view class="item-operate">
-    <view class="button bt-green f24" catchtap="naviToShopPage">找商家</view>
-    <view class="button bt-orange f24 mt20" catchtap="naviToCookPage">找菜谱</view>
+    <view class="button bt-green f24" catchtap="switchShopPage">找商家</view>
+    <view class="button bt-orange f24 mt20" catchtap="switchCookPage">找菜谱</view>
   </view>
 </template>

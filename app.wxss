@@ -227,6 +227,15 @@ page {background: #f0eff3;}
   flex-direction: column;
 }
 
+/************ 营养师特殊 **********/
+.dietitian-img {
+  width: 160rpx !important;
+  height: 160rpx !important;
+  border-radius: 160rpx !important;
+}
+.dietitian-desc {
+  width: 410rpx !important;
+}
 
 /************** 我的页面，列表中块级item，固定高度 *******/
 .mine-item {
